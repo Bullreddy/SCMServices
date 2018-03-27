@@ -1,4 +1,4 @@
-package com.reddys.IT.ITServices;
+package com.scm.services.controller;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
