@@ -1,12 +1,11 @@
 package com.scm.services.dao;
 
-import java.util.List;
-
-import com.scm.services.dao.entity.GetMasterRequestEntity;
-import com.scm.services.dao.entity.GetMasterResponseEntity;
+import com.scm.services.common.WrappedResponse;
+import com.scm.services.dao.entity.Classification;
+import com.scm.services.dao.entity.GetClassificationResponse;
 
 public interface MasterDAO {
 	
-	List<GetMasterResponseEntity> getMasterDetails(GetMasterRequestEntity requestEntity)throws Exception;
+	WrappedResponse<GetClassificationResponse> getClassificationDetails(Classification requestEntity)throws Exception;
 
 }

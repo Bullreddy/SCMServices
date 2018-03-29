@@ -2,17 +2,33 @@ package com.scm.services.daoimpl;
 
 import java.util.List;
 
-import com.scm.services.dao.MasterDAO;
-import com.scm.services.dao.entity.GetMasterRequestEntity;
-import com.scm.services.dao.entity.GetMasterResponseEntity;
+import org.springframework.stereotype.Repository;
 
+import com.scm.services.common.Status;
+import com.scm.services.common.WrappedResponse;
+import com.scm.services.dao.MasterDAO;
+import com.scm.services.dao.entity.Classification;
+import com.scm.services.dao.entity.GetClassificationResponse;
+
+@Repository
 public class MasterDAOImpl extends BaseDAOImpl implements MasterDAO {
 
 	@Override
-	public List<GetMasterResponseEntity> getMasterDetails(
-			GetMasterRequestEntity requestEntity) throws Exception {
+	public WrappedResponse<GetClassificationResponse> getClassificationDetails(Classification requestEntity)
+			throws Exception {
 		// TODO Auto-generated method stub
-		return getSession().createQuery("from Configuration where master_type=?").list();
+		WrappedResponse<GetClassificationResponse> wrappedResponse = new WrappedResponse<>(Status.FAILURE);
+		try {
+			GetClassificationResponse response = new GetClassificationResponse();
+			List<Classification> classifications = getSession().createQuery("from Configuration where master_type=?")
+					.list();
+			response.setClassifications(classifications);
+			wrappedResponse.setStatus(Status.SUCCESS);
+			wrappedResponse.setResponse(response);
+		} catch (Exception e) {
+			wrappedResponse.setException(e);
+		}
+		return wrappedResponse;
 
 	}
 

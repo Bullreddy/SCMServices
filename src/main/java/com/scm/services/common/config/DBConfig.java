@@ -12,8 +12,8 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-@Configuration
-@EnableTransactionManagement
+//@Configuration
+//@EnableTransactionManagement
 public class DBConfig {
 
   @Value("${db.driver}")

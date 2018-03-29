@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
 //@Transactional
 public class BaseDAOImpl {
   
-  @Autowired
+  //@Autowired
   private SessionFactory _sessionFactory;
   
   public Session getSession() {
