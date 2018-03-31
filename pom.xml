@@ -60,7 +60,15 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
+<<<<<<< HEAD
 		</dependency> -->
+		
+		<dependency>
+			<groupId>com.bulls.scm</groupId>
+			<artifactId>commonvo</artifactId>
+			<version>1.0</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<!-- hibernate ends -->
 		<!-- model mapper to convert obejct to another domain object -->
