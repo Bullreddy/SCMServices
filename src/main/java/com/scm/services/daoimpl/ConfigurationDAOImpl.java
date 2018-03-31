@@ -8,15 +8,14 @@ import javax.persistence.Query;
 import org.springframework.stereotype.Repository;
 
 import com.scm.services.dao.ConfigurationDAO;
-import com.scm.services.dao.entity.GetMasterRequestEntity;
-import com.scm.services.dao.entity.GetMasterResponseEntity;
+import com.scm.services.dao.entity.Classification;
 
 @Repository
 public class ConfigurationDAOImpl extends BaseDAOImpl implements ConfigurationDAO {
 
 	@Override
 	public List getMasterDetails(
-			GetMasterRequestEntity requestEntity) throws Exception {
+			Classification requestEntity) throws Exception {
 		List result=null;
 		try {
 		EntityManager em = getEM();
