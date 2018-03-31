@@ -1,1 +1,6 @@
 CREATE TABLE `scm`.`configuration`( `id` INT(10) NOT NULL, `code` VARCHAR(50) NOT NULL, `name` VARCHAR(200) NOT NULL, `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE'), `date_created` DATETIME, `date_modified` DATETIME, PRIMARY KEY (`id`) ); 
+
+insert into `configuration` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('1','BC','BC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:59');
+insert into `configuration` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('2','OC','OC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:53');
+insert into `configuration` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('3','PHASE1','Phase1','PHASE','2018-03-31 11:00:53','2018-03-31 11:00:53');
+insert into `configuration` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('4','PHASE2','Phase2','PHASE','2018-03-31 11:00:53','2018-03-31 11:00:53');
