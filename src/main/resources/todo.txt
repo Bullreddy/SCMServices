@@ -1,0 +1,6 @@
+Todo tasks
+1. Add Log file in server
+2. Integrate UI and Server.
+3. Deploy services and Ui as War and test
+4. Refractor the code base
+5. Identify and design the utilities and common framework 
