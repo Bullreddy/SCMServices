@@ -1,0 +1,1 @@
+CREATE TABLE `scm`.`configuration`( `id` INT(10) NOT NULL, `code` VARCHAR(50) NOT NULL, `name` VARCHAR(200) NOT NULL, `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE'), `date_created` DATETIME, `date_modified` DATETIME, PRIMARY KEY (`id`) ); 

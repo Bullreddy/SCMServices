@@ -25,27 +25,6 @@
 			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- hibernat dependency starts -->
-		<!-- Maven artifact identifier for Hibernate Search -->
-		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>4.3.1.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-search-orm</artifactId>
-			<version>4.5.1.Final</version>
-		</dependency>
-
-		<!-- Optional: to use JPA 2.1 -->
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -53,14 +32,24 @@
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
+		</dependency> 
+		
 		<dependency>
 			<groupId>com.bulls.scm</groupId>
 			<artifactId>commonvo</artifactId>
 			<version>1.0</version>
 			<scope>compile</scope>
 		</dependency>
+
 		<!-- hibernate ends -->
+		<!-- model mapper to convert obejct to another domain object -->
+		<!-- https://mvnrepository.com/artifact/org.modelmapper/modelmapper -->
+		<dependency>
+			<groupId>org.modelmapper</groupId>
+			<artifactId>modelmapper</artifactId>
+			<version>0.7.5</version>
+		</dependency>
+
 	</dependencies>
 
 	<properties>

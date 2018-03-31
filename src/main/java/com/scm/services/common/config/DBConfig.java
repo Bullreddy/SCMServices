@@ -1,6 +1,6 @@
 package com.scm.services.common.config;
 
-import java.util.Properties;
+/*import java.util.Properties;
 
 import javax.sql.DataSource;
 
@@ -13,9 +13,9 @@ import org.springframework.orm.hibernate4.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @Configuration
-@EnableTransactionManagement
+@EnableTransactionManagement*/
 public class DBConfig {
-
+/*
   @Value("${db.driver}")
   private String DB_DRIVER;
   
@@ -70,6 +70,6 @@ public class DBConfig {
         new HibernateTransactionManager();
     transactionManager.setSessionFactory(sessionFactory().getObject());
     return transactionManager;
-  }
+  }*/
 
 } // class DatabaseConfig

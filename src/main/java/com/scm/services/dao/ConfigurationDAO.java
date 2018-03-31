@@ -5,8 +5,8 @@ import java.util.List;
 import com.scm.services.dao.entity.GetMasterRequestEntity;
 import com.scm.services.dao.entity.GetMasterResponseEntity;
 
-public interface MasterDAO {
+public interface ConfigurationDAO {
 	
-	List<GetMasterResponseEntity> getMasterDetails(GetMasterRequestEntity requestEntity)throws Exception;
+	List getMasterDetails(GetMasterRequestEntity requestEntity)throws Exception;
 
 }
