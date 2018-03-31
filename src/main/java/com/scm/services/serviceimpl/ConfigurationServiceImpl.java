@@ -7,8 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.scm.services.dao.ConfigurationDAO;
-import com.scm.services.dao.entity.GetMasterRequestEntity;
-import com.scm.services.dto.GetMasterRequestDTO;
+import com.scm.services.dto.GetClassificationRequestDTO;
 import com.scm.services.exception.ServiceException;
 import com.scm.services.serviceinf.ConfigurationService;
 
@@ -21,11 +20,11 @@ public class ConfigurationServiceImpl implements ConfigurationService{
 	private ConfigurationDAO configurationDAO;
 	
 	@Override
-	public List getConfiguration(GetMasterRequestDTO getMasterDTO)
+	public List getConfiguration(GetClassificationRequestDTO getClassificationRequestDTO)
 			throws ServiceException {
 		List masterResponse = new ArrayList();
 		try{
-		masterResponse = configurationDAO.getMasterDetails(new GetMasterRequestEntity());
+		masterResponse = configurationDAO.getMasterDetails(null);
 		}catch(Exception e){
 			throw new ServiceException(e);
 		}
