@@ -2,6 +2,7 @@ package com.scm.services.controller;
 
 import java.util.List;
 
+import org.apache.log4j.Logger;
 import org.modelmapper.TypeToken;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -28,6 +29,8 @@ import com.scm.services.serviceinf.MasterService;
 @RequestMapping("/services/rest/classifications")
 public class ClassificationController {
 
+	private final static Logger LOGGER = Logger.getLogger(ClassificationController.class);
+	
 	@Autowired
 	private MapperUtils mapper;
 
@@ -39,6 +42,7 @@ public class ClassificationController {
 
 	@RequestMapping(value = "/getClassifications", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<GetClassificationResponseVO> getMaster(@RequestBody GetClassificationRequestVO requestVO,BindingResult bindingResults) {
+		LOGGER.debug("getClassifications operation begins--->");
 		GetClassificationResponseVO responseVO = new GetClassificationResponseVO();
 		try {
 			if(bindingResults!=null && bindingResults.hasErrors()) {
@@ -50,12 +54,14 @@ public class ClassificationController {
 		requestDTO.setTypes(this.mapper.map(requestVO.getTypes(), new TypeToken<List<ClassificationType>>() {}.getType()));
 		GetClassificationResponseDTO responseDTO = this.masterService.getClassificationDetails(requestDTO);
 		responseVO = this.mapper.map(responseDTO, GetClassificationResponseVO.class);
+		return new ResponseEntity(responseVO, HttpStatus.OK);
 		}catch(Exception exception) {
+			LOGGER.error("getClassifications operation failed due to -->",exception);
 			ServiceErrorVO errorVO = this.errorBuilder.buildErrorFromException(exception);
 			responseVO.setErrorVO(errorVO);
 			return  new ResponseEntity(responseVO, HttpStatus.INTERNAL_SERVER_ERROR); 
 		}
-		return new ResponseEntity(responseVO, HttpStatus.OK);
+		
 	}
 
 }

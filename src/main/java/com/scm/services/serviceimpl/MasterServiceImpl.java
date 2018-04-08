@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.scm.services.common.MapperUtils;
+import com.scm.services.common.Status;
 import com.scm.services.common.WrappedResponse;
 import com.scm.services.dao.MasterDAO;
 import com.scm.services.dao.entity.Classification;
@@ -25,18 +26,15 @@ public class MasterServiceImpl implements MasterService {
 	private MapperUtils mapper;
 
 	@Override
-	public GetClassificationResponseDTO getClassificationDetails(GetClassificationRequestDTO getMasterDTO) throws ServiceException {
-		try {
-			WrappedResponse<GetClassificationResponse> wrappedResponse = masterDAO
+	public GetClassificationResponseDTO getClassificationDetails(GetClassificationRequestDTO getMasterDTO) throws Exception {
+		WrappedResponse<GetClassificationResponse> wrappedResponse = masterDAO
 					.getClassificationDetails(new Classification());
-			if(wrappedResponse.getException()!=null) {
+			if(Status.FAILURE.equals(wrappedResponse.getStatus())) {
 				throw new ServiceException(wrappedResponse.getException());
 			}
 			GetClassificationResponseDTO responseDTO = this.mapper.map(wrappedResponse.getResponse(), GetClassificationResponseDTO.class);
 			return responseDTO;
-		} catch (Exception e) {
-			throw new ServiceException(e);
-		}
+		
 	}
 
 }

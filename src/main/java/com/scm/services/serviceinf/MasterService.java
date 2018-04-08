@@ -6,5 +6,5 @@ import com.scm.services.exception.ServiceException;
 
 public interface MasterService {
 
-	GetClassificationResponseDTO getClassificationDetails(GetClassificationRequestDTO getMasterDTO)throws ServiceException;
+	GetClassificationResponseDTO getClassificationDetails(GetClassificationRequestDTO getMasterDTO) throws Exception;
 }

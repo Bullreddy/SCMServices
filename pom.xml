@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -29,24 +30,15 @@
 		<!-- hibernat dependency starts -->
 		<!-- Maven artifact identifier for Hibernate Search -->
 		<!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
-		<!-- dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-orm</artifactId>
-			<version>4.3.1.RELEASE</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-search-orm</artifactId>
-			<version>4.5.1.Final</version>
-		</dependency-->
+		<!-- dependency> <groupId>org.springframework</groupId> <artifactId>spring-orm</artifactId> 
+			<version>4.3.1.RELEASE</version> </dependency> <dependency> <groupId>org.hibernate</groupId> 
+			<artifactId>hibernate-search-orm</artifactId> <version>4.5.1.Final</version> 
+			</dependency -->
 
 		<!-- Optional: to use JPA 2.1 -->
-		<!--  dependency>
-			<groupId>org.hibernate</groupId>
-			<artifactId>hibernate-entitymanager</artifactId>
-		</dependency-->
-	
+		<!-- dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-entitymanager</artifactId> 
+			</dependency -->
+
 		<dependency>
 			<groupId>com.bulls.scm</groupId>
 			<artifactId>commonvo</artifactId>
@@ -75,7 +67,11 @@
 			<artifactId>modelmapper</artifactId>
 			<version>0.7.5</version>
 		</dependency>
-
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.17</version>
+		</dependency>
 	</dependencies>
 
 	<build>

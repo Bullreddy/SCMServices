@@ -1,5 +1,6 @@
 package com.scm.services.dao.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -9,7 +10,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
-@Table(name = "certificates")
+@Table(name = "configuration")
 public class Classification {
 
 	@Id
@@ -26,6 +27,7 @@ public class Classification {
 	
 	@NotNull
 	@Size(min = 2, max = 80)
+	@Column(name="master_type")
 	private String classificationType;
 
 	public Classification() {

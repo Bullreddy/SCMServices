@@ -1,11 +1,8 @@
 package com.scm.services.common;
 
-import static org.junit.Assert.assertNotNull;
-
 import java.util.ResourceBundle;
 
 import org.springframework.stereotype.Component;
-import org.springframework.util.StringUtils;
 import org.springframework.validation.BindingResult;
 
 import com.bulls.scm.common.vo.ServiceErrorVO;
@@ -18,6 +15,21 @@ public class ServiceErrorVOBuilder {
 		ServiceErrorVO errorVO = new ServiceErrorVO();
 		if(ex instanceof BaseException) {
 			BaseException baseEx = (BaseException) ex;
+			errorVO.setErrorCode(baseEx.getCode()!=null?String.valueOf(baseEx.getCode()):ServiceStatus.INTERNAL_SERVER_ERROR.getCode().toString());
+			errorVO.setErrorMessage(baseEx.getErrorMessage());
+			errorVO.setDeveloperMessage(baseEx.getErrorMessage());
+			errorVO.setMoreInfo("For More Info contact admin");
+		}else {
+			errorVO.setErrorMessage(ex.getMessage());
+		}
+		
+		return errorVO;
+	}
+	
+	public ServiceErrorVO buildErrorFromException(Throwable ex) {
+		ServiceErrorVO errorVO = new ServiceErrorVO();
+		if(ex instanceof BaseException) {
+			BaseException baseEx = (BaseException) ex;
 			errorVO.setErrorCode(baseEx.getCode()!=null?String.valueOf(baseEx.getCode()):null);
 			errorVO.setErrorMessage(baseEx.getErrorMessage());
 		}else {
@@ -26,7 +38,6 @@ public class ServiceErrorVOBuilder {
 		
 		return errorVO;
 	}
-	
 	public ServiceErrorVO buildErrorFromBindingResults(BindingResult bindingResults) {
 		ServiceErrorVO errorVO = null;
 		String message= null;
