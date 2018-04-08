@@ -22,7 +22,7 @@ import com.scm.services.common.MapperUtils;
 import com.scm.services.common.ServiceErrorVOBuilder;
 import com.scm.services.dto.GetClassificationRequestDTO;
 import com.scm.services.dto.GetClassificationResponseDTO;
-import com.scm.services.serviceinf.MasterService;
+import com.scm.services.serviceinf.ClassificationService;
 
 
 @RestController
@@ -35,7 +35,7 @@ public class ClassificationController {
 	private MapperUtils mapper;
 
 	@Autowired
-	private MasterService masterService;
+	private ClassificationService masterService;
 	
 	@Autowired
 	private ServiceErrorVOBuilder errorBuilder;

@@ -2,6 +2,8 @@ package com.scm.services.dao.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -9,8 +11,10 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import com.scm.services.common.ClassificationType;
+
 @Entity
-@Table(name = "configuration")
+@Table(name = "classification")
 public class Classification {
 
 	@Id
@@ -27,8 +31,9 @@ public class Classification {
 	
 	@NotNull
 	@Size(min = 2, max = 80)
-	@Column(name="master_type")
-	private String classificationType;
+	@Enumerated(EnumType.STRING)
+	@Column(name="type")
+	private ClassificationType classificationType;
 
 	public Classification() {
 	}
@@ -66,11 +71,11 @@ public class Classification {
 		this.name = value;
 	}
 
-	public String getClassificationType() {
+	public ClassificationType getClassificationType() {
 		return classificationType;
 	}
 
-	public void setClassificationType(String classificationType) {
+	public void setClassificationType(ClassificationType classificationType) {
 		this.classificationType = classificationType;
 	}
 

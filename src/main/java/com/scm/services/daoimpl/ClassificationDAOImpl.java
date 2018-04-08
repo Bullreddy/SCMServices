@@ -7,14 +7,14 @@ import org.springframework.stereotype.Repository;
 
 import com.scm.services.common.Status;
 import com.scm.services.common.WrappedResponse;
-import com.scm.services.dao.MasterDAO;
+import com.scm.services.dao.ClassificationDAO;
 import com.scm.services.dao.entity.Classification;
 import com.scm.services.dao.entity.GetClassificationResponse;
 
 @Repository
-public class MasterDAOImpl extends BaseDAOImpl implements MasterDAO {
+public class ClassificationDAOImpl extends BaseDAOImpl implements ClassificationDAO {
 
-	private final static Logger LOGGER = Logger.getLogger(MasterDAOImpl.class);
+	private final static Logger LOGGER = Logger.getLogger(ClassificationDAOImpl.class);
 	
 	@Override
 	public WrappedResponse<GetClassificationResponse> getClassificationDetails(Classification requestEntity)
