@@ -8,3 +8,30 @@ insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `dat
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('2','OC','OC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:53');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('3','PHASE1','Phase1','PHASE','2018-03-31 11:00:53','2018-03-31 11:00:53');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('4','PHASE2','Phase2','PHASE','2018-03-31 11:00:53','2018-03-31 11:00:53');
+
+
+CREATE TABLE admission
+(	
+	id int,
+	admission_no varchar(50),
+	registration_no varchar(50),
+	academic_year int,
+	phase int,
+	name varchar(200),
+	father_name varchar(200),
+	mother_name varchar(200),
+	present_address varchar(350),
+	mobile_no NUMERIC,
+	alternate_mobile_no NUMERIC,
+	email varchar(100),
+	trade int,
+	caste int,
+	dob date,
+	scholarship char,
+	photo_sbmtd char,
+	identification_marks varchar(350),
+	FOREIGN KEY (academic_year) REFERENCES CLASSIFICATION(ID),
+	FOREIGN KEY (phase) REFERENCES CLASSIFICATION(ID),
+	FOREIGN KEY (trade) REFERENCES CLASSIFICATION(ID),
+	FOREIGN KEY (caste) REFERENCES CLASSIFICATION(ID)
+)
