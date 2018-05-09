@@ -18,6 +18,7 @@ import com.bulls.scm.common.vo.ServiceErrorVO;
 import com.bulls.scm.vo.GetClassificationRequestVO;
 import com.bulls.scm.vo.GetClassificationResponseVO;
 import com.scm.services.common.ClassificationType;
+import com.scm.services.common.ExportUtil;
 import com.scm.services.common.MapperUtils;
 import com.scm.services.common.ServiceErrorVOBuilder;
 import com.scm.services.dto.GetClassificationRequestDTO;
@@ -62,6 +63,11 @@ public class ClassificationController {
 			return  new ResponseEntity(responseVO, HttpStatus.INTERNAL_SERVER_ERROR); 
 		}
 		
+	}
+	
+	@RequestMapping(value="/exportStudents")
+	public void getStudents() {
+		ExportUtil.exporttoXLS(masterService.getStudents());
 	}
 
 }
