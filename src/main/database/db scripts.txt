@@ -2,13 +2,18 @@ CREATE DATABASE SCM;
 
 USE SCM;
 
-CREATE TABLE `scm`.`classification`( `id` INT(10) NOT NULL, `code` VARCHAR(50) NOT NULL, `name` VARCHAR(200) NOT NULL, `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE'), `date_created` DATETIME, `date_modified` DATETIME, PRIMARY KEY (`id`) ); 
+CREATE TABLE `scm`.`classification`( `id` INT(10) NOT NULL, `code` VARCHAR(50) NOT NULL, `name` VARCHAR(200) NOT NULL, `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE'), `date_created` DATETIME, `date_modified` DATETIME, PRIMARY KEY (`id`) ); 
 
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('1','BC','BC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:59');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('2','OC','OC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:53');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('3','PHASE1','Phase1','PHASE','2018-03-31 11:00:53','2018-03-31 11:00:53');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('4','PHASE2','Phase2','PHASE','2018-03-31 11:00:53','2018-03-31 11:00:53');
-
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('5','2018','2018','ACADEMIC_YEAR','2018-05-09 22:45:17','2018-05-09 22:45:21');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('6','2017','2017','ACADEMIC_YEAR','2018-05-09 22:45:46','2018-05-09 22:45:48');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('7','ELEC','Electrical','TRADE','2018-05-09 22:46:26','2018-05-09 22:46:29');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('8','MECH','Mechanical','TRADE','2018-05-09 22:46:51','2018-05-09 22:46:54');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('9','REGULAR','Regular','TYPE','2018-05-09 22:57:33','2018-05-09 22:57:36');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('10','PARTTIME','Part Time','TYPE','2018-05-09 23:01:04','2018-05-09 23:01:09');
 
 CREATE TABLE admission
 (	
@@ -43,3 +48,5 @@ CREATE TABLE admission
 	FOREIGN KEY (trade) REFERENCES CLASSIFICATION(ID),
 	FOREIGN KEY (caste) REFERENCES CLASSIFICATION(ID)
 )
+
+ALTER TABLE admission ADD CONSTRAINT FOREIGN KEY (TYPE) REFERENCES CLASSIFICATION(id)
