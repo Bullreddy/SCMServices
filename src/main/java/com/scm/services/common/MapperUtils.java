@@ -7,6 +7,6 @@ import org.springframework.stereotype.Service;
 public class MapperUtils extends ModelMapper{
 
 public MapperUtils() {
-	this.getConfiguration().setFieldMatchingEnabled(Boolean.TRUE).setFieldAccessLevel(org.modelmapper.config.Configuration.AccessLevel.PRIVATE);
+	this.getConfiguration().setFieldMatchingEnabled(Boolean.TRUE).setFieldAccessLevel(org.modelmapper.config.Configuration.AccessLevel.PRIVATE).setAmbiguityIgnored(true);
 }
 }

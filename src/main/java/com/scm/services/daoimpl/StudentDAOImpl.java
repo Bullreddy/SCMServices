@@ -24,6 +24,11 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 	
 	public StudentVO saveStudent(StudentVO studentVO) {
 		Admission admission = mapper.map(studentVO, Admission.class);
+		admission.setAcademicYearID(studentVO.getAcademicYearID());
+		admission.setCaste(studentVO.getCasteID());
+		admission.setPhaseID(studentVO.getPhaseID());
+		admission.setTradeID(studentVO.getTradeID());
+		admission.setTypeID(studentVO.getTypeID());
 		if(admission.getId()==0)
 			getEM().persist(admission);
 		else
@@ -38,7 +43,13 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		Query query = getEM().createNamedQuery("Admission.findAll");
 		List<Admission> admissions = query.getResultList();
 		admissions.forEach(admission -> {
-			studentVOList.add(mapper.map(admission, StudentVO.class));
+			StudentVO studentVO = mapper.map(admission, StudentVO.class); 
+			studentVO.setAcademicYearID(admission.getAcademicYearID());
+			studentVO.setCasteID(admission.getCaste());
+			studentVO.setPhaseID(admission.getPhaseID());
+			studentVO.setTradeID(admission.getTradeID());
+			studentVO.setTypeID(admission.getTypeID());
+			studentVOList.add(studentVO);
 		});
 		return studentVOList;
 	}

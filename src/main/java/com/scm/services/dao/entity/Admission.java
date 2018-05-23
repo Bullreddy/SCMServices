@@ -16,7 +16,11 @@ public class Admission implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Column(name="academic_year")
-	private int academicYear;
+	private int academicYearID;
+	
+	@OneToOne
+	@JoinColumn(name="phase",insertable=false,updatable=false)
+	Classification academicYear;
 
 	@Temporal(TemporalType.DATE)
 	@Column(name="admission_date")
@@ -29,8 +33,9 @@ public class Admission implements Serializable {
 	private BigDecimal alternateMobileNo;
 
 	private int caste;
-	
-	@Column(name="caste",insertable=false,updatable=false)
+
+	@OneToOne
+	@JoinColumn(name="caste",insertable=false,updatable=false)
 	private Classification casteDesc;
 
 	@Temporal(TemporalType.DATE)
@@ -64,7 +69,12 @@ public class Admission implements Serializable {
 
 	private String name;
 
-	private int phase;
+	@Column(name="phase")
+	private int phaseID;
+	
+	@OneToOne
+	@JoinColumn(name="phase",insertable=false,updatable=false)
+	Classification phase;
 
 	@Column(name="photo_sbmtd")
 	private String photoSbmtd;
@@ -79,9 +89,19 @@ public class Admission implements Serializable {
 
 	private String shift;
 
-	private int trade;
+	@Column(name="trade")
+	private int tradeID;
 
-	private int type;
+	@Column(name="type")
+	private int typeID;
+	
+	@OneToOne
+	@JoinColumn(name="trade",insertable=false,updatable=false)
+	Classification trade;
+	
+	@OneToOne
+	@JoinColumn(name="type",insertable=false,updatable=false)
+	Classification type;
 
 	private String UID_Number;
 
@@ -90,12 +110,12 @@ public class Admission implements Serializable {
 	public Admission() {
 	}
 
-	public int getAcademicYear() {
-		return this.academicYear;
+	public int getAcademicYearID() {
+		return this.academicYearID;
 	}
 
-	public void setAcademicYear(int academicYear) {
-		this.academicYear = academicYear;
+	public void setAcademicYearID(int academicYearID) {
+		this.academicYearID = academicYearID;
 	}
 
 	public Date getAdmissionDate() {
@@ -128,6 +148,14 @@ public class Admission implements Serializable {
 
 	public void setCaste(int caste) {
 		this.caste = caste;
+	}
+	
+	public Classification getCasteDesc() {
+		return casteDesc;
+	}
+
+	public void setCasteDesc(Classification casteDesc) {
+		this.casteDesc = casteDesc;
 	}
 
 	public Date getDob() {
@@ -218,12 +246,12 @@ public class Admission implements Serializable {
 		this.name = name;
 	}
 
-	public int getPhase() {
-		return this.phase;
+	public int getPhaseID() {
+		return this.phaseID;
 	}
 
-	public void setPhase(int phase) {
-		this.phase = phase;
+	public void setPhaseID(int phaseID) {
+		this.phaseID = phaseID;
 	}
 
 	public String getPhotoSbmtd() {
@@ -266,20 +294,20 @@ public class Admission implements Serializable {
 		this.shift = shift;
 	}
 
-	public int getTrade() {
-		return this.trade;
+	public int getTradeID() {
+		return this.tradeID;
 	}
 
-	public void setTrade(int trade) {
-		this.trade = trade;
+	public void setTradeID(int tradeID) {
+		this.tradeID = tradeID;
 	}
 
-	public int getType() {
-		return this.type;
+	public int getTypeID() {
+		return this.typeID;
 	}
 
-	public void setType(int type) {
-		this.type = type;
+	public void setTypeID(int typeID) {
+		this.typeID = typeID;
 	}
 
 	public String getUID_Number() {
@@ -296,6 +324,38 @@ public class Admission implements Serializable {
 
 	public void setUnit(String unit) {
 		this.unit = unit;
+	}
+
+	public Classification getAcademicYear() {
+		return academicYear;
+	}
+
+	public void setAcademicYear(Classification academicYear) {
+		this.academicYear = academicYear;
+	}
+
+	public Classification getPhase() {
+		return phase;
+	}
+
+	public void setPhase(Classification phase) {
+		this.phase = phase;
+	}
+
+	public Classification getTrade() {
+		return trade;
+	}
+
+	public void setTrade(Classification trade) {
+		this.trade = trade;
+	}
+
+	public Classification getType() {
+		return type;
+	}
+
+	public void setType(Classification type) {
+		this.type = type;
 	}
 
 }

@@ -1,5 +1,5 @@
 package com.scm.services.common;
 
 public enum ClassificationType {
-CASTE,CERT,PHASE
+CASTE,CERTIFICATE,PHASE,TRADE,ACADEMIC_YEAR,TYPE
 }
