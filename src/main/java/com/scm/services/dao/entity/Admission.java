@@ -29,6 +29,9 @@ public class Admission implements Serializable {
 	private BigDecimal alternateMobileNo;
 
 	private int caste;
+	
+	@Column(name="caste",insertable=false,updatable=false)
+	private Classification casteDesc;
 
 	@Temporal(TemporalType.DATE)
 	private Date dob;
@@ -47,6 +50,7 @@ public class Admission implements Serializable {
 	private String highestQualification;
 
 	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 
 	@Column(name="identification_marks")
