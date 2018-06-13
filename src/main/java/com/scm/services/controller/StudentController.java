@@ -25,6 +25,7 @@ public class StudentController {
 	
 	@RequestMapping(value="/saveStudent", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<StudentVO> saveStudent(@RequestBody StudentVO studentVO,BindingResult bindingResults) {
+		LOGGER.info(studentVO);
 		return new ResponseEntity<StudentVO>(studentService.saveStudent(studentVO),HttpStatus.OK);
 	}
 	

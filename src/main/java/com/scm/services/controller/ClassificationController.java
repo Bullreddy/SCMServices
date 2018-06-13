@@ -1,5 +1,6 @@
 package com.scm.services.controller;
 
+import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
@@ -68,6 +69,14 @@ public class ClassificationController {
 	@RequestMapping(value="/exportStudents")
 	public void getStudents() {
 		ExportUtil.exporttoXLS(masterService.getStudents());
+	}
+	
+	@RequestMapping(value="/getClassificationsVO")
+	public GetClassificationRequestVO getGetClassificationRequestVO() {
+		GetClassificationRequestVO getClassificationRequestVO = new GetClassificationRequestVO();
+		getClassificationRequestVO.setTypes(Arrays.asList(com.bulls.scm.common.vo.ClassificationType.CASTE,com.bulls.scm.common.vo.ClassificationType.PHASE));
+		return getClassificationRequestVO;
+		
 	}
 
 }
