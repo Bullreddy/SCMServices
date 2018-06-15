@@ -37,7 +37,7 @@ public class ExportUtil {
 		
 		students.forEach(student ->{
 			HSSFRow row = sheet.createRow(rownum);
-			row.createCell(0).setCellValue(student.getAcademicYear());
+			row.createCell(0).setCellValue(student.getAcademicYear().getName());
 			row.createCell(1).setCellValue(student.getAdmissionNo());
 			row.createCell(2).setCellValue(student.getRegistrationNo());
 			row.createCell(3).setCellValue(student.getAdmissionNo());
@@ -47,14 +47,14 @@ public class ExportUtil {
 			row.createCell(7).setCellValue(student.getEmail());
 			row.createCell(8).setCellValue(student.getDob());
 			row.createCell(9).setCellValue(student.getGender());
-			row.createCell(10).setCellValue(student.getCaste());
-			row.createCell(11).setCellValue(student.getCaste());
+			row.createCell(10).setCellValue(student.getCaste().getName());
+			row.createCell(11).setCellValue(student.getCaste().getName());
 			row.createCell(12).setCellValue(student.getFatherName());
 			row.createCell(13).setCellValue(student.getMotherName());
-			row.createCell(14).setCellValue(student.getCaste());
+			row.createCell(14).setCellValue(student.getCaste().getName());
 			row.createCell(15).setCellValue(student.getEmail());
-			row.createCell(16).setCellValue(student.getType());
-			row.createCell(17).setCellValue(student.getTrade());
+			row.createCell(16).setCellValue(student.getType().getName());
+			row.createCell(17).setCellValue(student.getTrade().getName());
 			row.createCell(18).setCellValue(student.getShift());
 			row.createCell(19).setCellValue(student.getUnit());
 			row.createCell(20).setCellValue(student.getUID_Number());
