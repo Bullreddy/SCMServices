@@ -6,9 +6,13 @@ import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletResponse;
+
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.springframework.http.MediaType;
 
 import com.bulls.scm.common.vo.StudentVO;
 
@@ -20,9 +24,9 @@ public class ExportUtil {
 	private static int rownum =0;
 	private static int headerColIndex;
 	
-	public static void exporttoXLS(List<StudentVO> students) {
+	public static HSSFWorkbook exporttoXLS(List<StudentVO> students, HttpServletResponse response) {
 		if(students == null)
-			return;
+			return null;
 		HSSFWorkbook workBook = new HSSFWorkbook();
 		HSSFSheet sheet =workBook.createSheet();
 		String[] headers = {"Session,MIS_ITI_Code","State_Registration_Number","Appliction_Form_Number","Admission_Date","Trainee_Name","Mobile_Number","Email_ID","Date_Of_Birth","Gender","Category","Horizontal_Category","Father_Guardian_Name","Mother_Name","Admission_Given_in_Category","Trainee_Type","Trade","Shift","Unit","Minority_Category","UID_Number","Highest_Qualification","Is_Trainee_Dual_Mode","Remarks"};
@@ -41,7 +45,7 @@ public class ExportUtil {
 			row.createCell(1).setCellValue(student.getAdmissionNo());
 			row.createCell(2).setCellValue(student.getRegistrationNo());
 			row.createCell(3).setCellValue(student.getAdmissionNo());
-			row.createCell(4).setCellValue(student.getAdmissionDate());
+			row.createCell(4).setCellValue(student.getAdmissionDate()!=null?student.getAdmissionDate().toString():"");
 			row.createCell(5).setCellValue(student.getName());
 			row.createCell(6).setCellValue(student.getMobileNo()!=null?student.getMobileNo().toString():null);
 			row.createCell(7).setCellValue(student.getEmail());
@@ -63,11 +67,27 @@ public class ExportUtil {
 			row.createCell(23).setCellValue(student.getIdentificationMarks());
 			rownum++;
 		});
-		writeToFile(workBook);
+		return workBook;
+		//downloadFile(workBook,response);
+	}
+
+	private static void downloadFile(HSSFWorkbook workBook, HttpServletResponse response) {
+		
+		try {
+			response.setHeader("Content-Disposition", "attachment; filename=\"testExcel.xls\"");
+			response.setContentType(MediaType.APPLICATION_OCTET_STREAM_VALUE);
+		   // response.setContentType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+		    
+			workBook.write(response.getOutputStream());
+			response.flushBuffer();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 	public static void writeToFile(HSSFWorkbook workBook) {
-		String file = "D:\\COE\\studentdetails.xls";
+		String file = "E:\\studentdetails.xls";
         try{
             FileOutputStream fos = new FileOutputStream(file);
             workBook.write(fos);

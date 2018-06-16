@@ -10,5 +10,4 @@ public interface ClassificationService {
 
 	GetClassificationResponseDTO getClassificationDetails(GetClassificationRequestDTO getMasterDTO) throws Exception;
 	
-	List<StudentVO> getStudents();
 }

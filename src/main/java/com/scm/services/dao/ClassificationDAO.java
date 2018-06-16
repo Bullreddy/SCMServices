@@ -11,6 +11,4 @@ public interface ClassificationDAO {
 	
 	WrappedResponse<GetClassificationResponse> getClassificationDetails(Classification requestEntity)throws Exception;
 	
-	List<StudentVO> getStudents();
-
 }

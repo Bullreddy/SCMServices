@@ -32,7 +32,7 @@ public class ClassificationDAOImpl extends BaseDAOImpl implements Classification
 		WrappedResponse<GetClassificationResponse> wrappedResponse = new WrappedResponse<>(Status.FAILURE);
 		try {
 			GetClassificationResponse response = new GetClassificationResponse();
-			List<Classification> classifications = getEM().createQuery("from configuration where master_type=?")
+			List<Classification> classifications = getEM().createQuery("from Classification")
 					.getResultList();
 			response.setClassifications(classifications);
 			wrappedResponse.setStatus(Status.SUCCESS);
@@ -44,18 +44,6 @@ public class ClassificationDAOImpl extends BaseDAOImpl implements Classification
 		}
 		return wrappedResponse;
 
-	}
-
-	@Override
-	public List<StudentVO> getStudents() {
-		List<StudentVO> studentVOList = new ArrayList<StudentVO>();
-		Query query = getEM().createNamedQuery("Admission.findAll");
-		List<Admission> admissions = query.getResultList();
-		admissions.forEach(admission -> {
-			studentVOList.add(mapper.map(admission, StudentVO.class));
-		});
-		LOGGER.info("admissions "+admissions);
-		return studentVOList;
 	}
 
 }

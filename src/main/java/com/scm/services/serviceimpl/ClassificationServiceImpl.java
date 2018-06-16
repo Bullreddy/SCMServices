@@ -38,9 +38,5 @@ public class ClassificationServiceImpl implements ClassificationService {
 		
 	}
 
-	@Override
-	public List<StudentVO> getStudents() {
-		return masterDAO.getStudents();
-	}
 
 }
