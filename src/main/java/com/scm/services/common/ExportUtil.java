@@ -29,7 +29,7 @@ public class ExportUtil {
 			return null;
 		HSSFWorkbook workBook = new HSSFWorkbook();
 		HSSFSheet sheet =workBook.createSheet();
-		String[] headers = {"Session,MIS_ITI_Code","State_Registration_Number","Appliction_Form_Number","Admission_Date","Trainee_Name","Mobile_Number","Email_ID","Date_Of_Birth","Gender","Category","Horizontal_Category","Father_Guardian_Name","Mother_Name","Admission_Given_in_Category","Trainee_Type","Trade","Shift","Unit","Minority_Category","UID_Number","Highest_Qualification","Is_Trainee_Dual_Mode","Remarks"};
+		String[] headers = {"Session","MIS_ITI_Code","State_Registration_Number","Appliction_Form_Number","Admission_Date","Trainee_Name","Mobile_Number","Email_ID","Date_Of_Birth","Gender","Category","Horizontal_Category","Father_Guardian_Name","Mother_Name","Admission_Given_in_Category","Trainee_Type","Trade","Shift","Unit","Minority_Category","UID_Number","Highest_Qualification","Is_Trainee_Dual_Mode","Remarks"};
 		rownum = 0;
 		HSSFRow headerRow = sheet.createRow(rownum);
 		rownum++;
