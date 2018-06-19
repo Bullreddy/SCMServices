@@ -8,6 +8,7 @@
 	<artifactId>ITServcices</artifactId>
 	<version>0.1.0</version>
 	<packaging>war</packaging>
+	<name>ScmServices</name>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -73,17 +74,55 @@
 			<version>1.2.17</version>
 		</dependency>
 		<dependency>
-		    <groupId>org.apache.poi</groupId>
-		    <artifactId>poi-ooxml</artifactId>
-		    <version>3.15</version>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.15</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
 	<build>
+		<finalName>SCMServices</finalName>
+		<!-- resources> <resource> <directory>src/main/resources</directory> <filtering>true</filtering> 
+			<excludes> <exclude>*.properties</exclude> </excludes> </resource> </resources -->
 		<plugins>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-maven-plugin</artifactId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<webResources>
+						<resource>
+							this is relative to the pom.xml directory
+							<directory>${basedir}src/main/resources/config</directory>
+							<excludes>
+								<exclude>**.*properties</exclude>
+							</excludes>
+						</resource>
+					</webResources>
+				</configuration>
+		
+ 				<executions>
+					<execution>
+						<id>copy-resources</id>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/target/classes/static/</outputDirectory>
+							<resources>
+								<resource>
+									<directory>./SCMUI/dist</directory>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+				<!-- configuration> <packagingExcludes> src/main/resources/config </packagingExcludes> 
+					<addResources>false</addResources> </configuration -->
 			</plugin>
 
 		</plugins>

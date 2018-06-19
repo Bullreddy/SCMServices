@@ -1,8 +1,8 @@
-CREATE DATABASE SCM;
+CREATE DATABASE IF NOT EXISTS scm;
 
-USE SCM;
+USE scm;
 
-CREATE TABLE `scm`.`classification`( `id` INT(10) NOT NULL, `code` VARCHAR(50) NOT NULL, `name` VARCHAR(200) NOT NULL, `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE'), `date_created` DATETIME, `date_modified` DATETIME, PRIMARY KEY (`id`) ); 
+CREATE TABLE IF NOT EXISTS `classification`( `id` INT(10) NOT NULL, `code` VARCHAR(50) NOT NULL, `name` VARCHAR(200) NOT NULL, `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE'), `date_created` DATETIME, `date_modified` DATETIME, PRIMARY KEY (`id`) ); 
 
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('1','BC','BC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:59');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('2','OC','OC','CASTE','2018-03-31 11:00:53','2018-03-31 11:00:53');
@@ -43,12 +43,12 @@ CREATE TABLE admission
 	highest_qualification varchar(50),
 	dual_mode char,
 	identification_marks varchar(350),
-	FOREIGN KEY (academic_year) REFERENCES CLASSIFICATION(ID),
-	FOREIGN KEY (phase) REFERENCES CLASSIFICATION(ID),
-	FOREIGN KEY (trade) REFERENCES CLASSIFICATION(ID),
-	FOREIGN KEY (caste) REFERENCES CLASSIFICATION(ID)
+	FOREIGN KEY (academic_year) REFERENCES classification(ID),
+	FOREIGN KEY (phase) REFERENCES classification(ID),
+	FOREIGN KEY (trade) REFERENCES classification(ID),
+	FOREIGN KEY (caste) REFERENCES classification(ID)
 );
 
-ALTER TABLE admission ADD CONSTRAINT FOREIGN KEY (TYPE) REFERENCES CLASSIFICATION(id);
+ALTER TABLE admission ADD CONSTRAINT FOREIGN KEY (TYPE) REFERENCES classification(id);
 ALTER TABLE admission ADD PRIMARY KEY (id);
 ALTER TABLE admission MODIFY COLUMN id INT NOT NULL auto_increment;
