@@ -7,6 +7,8 @@ import com.bulls.scm.common.vo.ClassificationType;
 public class GetClassificationRequestDTO {
 
 	private List<ClassificationType> types;
+	
+	private String scholarshipType;
 
 	public List<ClassificationType> getTypes() {
 		return types;
@@ -15,4 +17,13 @@ public class GetClassificationRequestDTO {
 	public void setTypes(List<ClassificationType> types) {
 		this.types = types;
 	}
+
+	public String getScholarshipType() {
+		return scholarshipType;
+	}
+
+	public void setScholarshipType(String scholarshipType) {
+		this.scholarshipType = scholarshipType;
+	}
+	
 }

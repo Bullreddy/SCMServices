@@ -46,4 +46,24 @@ public class ClassificationDAOImpl extends BaseDAOImpl implements Classification
 
 	}
 
+	@Override
+	public WrappedResponse<GetClassificationResponse> getCertificates(String scholarshipType) throws Exception {
+		LOGGER.debug("getcertificatess operation dao layer begins");
+		WrappedResponse<GetClassificationResponse> wrappedResponse = new WrappedResponse<>(Status.FAILURE);
+		try {
+			GetClassificationResponse response = new GetClassificationResponse();
+			Query query = getEM().createQuery("from Certificate where type = :type or type is null");
+			query.setParameter("type", Integer.valueOf(scholarshipType));
+			List<Classification> classifications = query.getResultList();
+			response.setClassifications(classifications);
+			wrappedResponse.setStatus(Status.SUCCESS);
+			wrappedResponse.setResponse(response);
+		} catch (Exception e) {
+			LOGGER.error("getClassfication operation failed dao exception-->",e);
+			wrappedResponse.setStatus(Status.FAILURE);
+			wrappedResponse.setException(e);
+		}
+		return wrappedResponse;
+	}
+
 }

@@ -38,5 +38,16 @@ public class ClassificationServiceImpl implements ClassificationService {
 		
 	}
 
+	@Override
+	public GetClassificationResponseDTO getCertificates(GetClassificationRequestDTO getMasterDTO) throws Exception {
+		WrappedResponse<GetClassificationResponse> wrappedResponse = masterDAO
+				.getCertificates(getMasterDTO.getScholarshipType());
+		if(Status.FAILURE.equals(wrappedResponse.getStatus())) {
+			throw new ServiceException(wrappedResponse.getException());
+		}
+		GetClassificationResponseDTO responseDTO = this.mapper.map(wrappedResponse.getResponse(), GetClassificationResponseDTO.class);
+		return responseDTO;
+	}
+
 
 }

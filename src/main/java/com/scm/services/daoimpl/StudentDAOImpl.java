@@ -16,9 +16,7 @@ import com.scm.services.dao.entity.Admission;
 @Repository
 public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 
-	@Autowired
-	private MapperUtils mapper;
-	
+
 	public StudentDAOImpl() {
 	}
 	

@@ -10,4 +10,6 @@ public interface ClassificationService {
 
 	GetClassificationResponseDTO getClassificationDetails(GetClassificationRequestDTO getMasterDTO) throws Exception;
 	
+	GetClassificationResponseDTO getCertificates(GetClassificationRequestDTO getMasterDTO) throws Exception;
+	
 }

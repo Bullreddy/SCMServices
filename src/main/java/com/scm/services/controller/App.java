@@ -46,6 +46,10 @@ public class App extends SpringBootServletInitializer
     			registry.addMapping("/student/saveStudent").allowedOrigins("http://localhost:4200");
     			registry.addMapping("/student/getStudents").allowedOrigins("http://localhost:4200");
     			registry.addMapping("/student/exportStudents").allowedOrigins("http://localhost:4200");
+    			registry.addMapping("/services/rest/classifications/getClassifications").allowedOrigins("http://localhost:8080");
+    			registry.addMapping("/student/saveStudent").allowedOrigins("http://localhost:8080");
+    			registry.addMapping("/student/getStudents").allowedOrigins("http://localhost:8080");
+    			registry.addMapping("/student/exportStudents").allowedOrigins("http://localhost:8080");
     		}
 		};
     }
