@@ -37,16 +37,24 @@ public class App extends SpringBootServletInitializer
         return application.sources(App.class).properties(getProperties());
     }
     
+   
     @Bean
     public WebMvcConfigurer corsconfigurer() {
     	return new WebMvcConfigurerAdapter() {
-    		@Override
-    		public void addCorsMappings(CorsRegistry registry) {
+    		
+    	/*	public void addCorsMappings(CorsRegistry registry) {
     			registry.addMapping("/services/rest/classifications/getClassifications").allowedOrigins("http://localhost:4200");
     			registry.addMapping("/student/saveStudent").allowedOrigins("http://localhost:4200");
     			registry.addMapping("/student/getStudents").allowedOrigins("http://localhost:4200");
     			registry.addMapping("/student/exportStudents").allowedOrigins("http://localhost:4200");
-    		}
+    			registry.addMapping("/token/**").allowedOrigins("http://localhost:4200");
+        		
+    		}*/
+    		@Override
+    	        public void addCorsMappings(CorsRegistry registry) {
+    	            registry.addMapping("/**");
+    	        }
+    	    
 		};
     }
     
