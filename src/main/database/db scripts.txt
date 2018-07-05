@@ -52,3 +52,14 @@ CREATE TABLE admission
 ALTER TABLE admission ADD CONSTRAINT FOREIGN KEY (TYPE) REFERENCES classification(id);
 ALTER TABLE admission ADD PRIMARY KEY (id);
 ALTER TABLE admission MODIFY COLUMN id INT NOT NULL auto_increment;
+
+CREATE TABLE IF NOT EXISTS `user`( `id` INT(10) NOT NULL, `username` VARCHAR(100) NOT NULL, 
+`password` VARCHAR(100) NOT NULL,`email` VARCHAR(100) NOT NULL,
+`contact_no` NUMERIC, PRIMARY KEY (`id`) ); 
+
+
+
+
+//password:welcome
+insert into `user` (`id`, `username`, `password`, `email`, `contact_no`) 
+values('1','admin','$2a$04$HYK2s1ChruRfIq1dhqCPN.Li12XMFFK1B7Aj6JDhM1PaPGZL674gC','user@gmail.com',12345678);

@@ -1,0 +1,1156 @@
+2018-06-22 18:21:32 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:21:38 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:24:42 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:24:42 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:46:50 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:46:52 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:53:47 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:53:48 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:54:13 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:54:13 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:54:34 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:54:34 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:57:55 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:57:56 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 18:59:01 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 18:59:01 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:00:12 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:00:14 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:03:37 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:03:37 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:03:45 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:03:46 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:09:51 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:09:51 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:09:57 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:09:57 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:11:34 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:11:34 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:11:42 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:11:42 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:17:32 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:17:32 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:19:58 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:19:58 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:23:20 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:23:20 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:24:04 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:24:04 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:27:42 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:27:42 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:28:51 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:28:51 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:29:39 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:29:39 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 19:29:43 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 19:29:43 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 20:12:52 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 20:12:53 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 20:13:49 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 20:13:49 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 21:56:41 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 21:56:43 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 22:14:01 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 22:14:02 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 22:15:51 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 22:15:51 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 22:16:34 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 22:16:34 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 22:19:08 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 22:19:08 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-22 22:20:25 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-22 22:20:25 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 00:06:13 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 00:06:15 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 00:09:16 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 00:09:16 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 15:07:45 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 15:07:45 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 15:07:55 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 15:07:55 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 15:11:05 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 15:11:05 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 15:50:24 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 15:50:25 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 17:07:52 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 17:07:56 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-23 17:12:40 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-23 17:12:40 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-24 13:35:52 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-24 13:35:52 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-06-24 15:36:39 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-06-24 15:36:48 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-02 14:12:28 DEBUG JwtAuthenticationEntryPoint:24 - Authentication operation begins--->
+2018-07-02 14:14:32 DEBUG JwtAuthenticationEntryPoint:24 - Authentication operation begins--->
+2018-07-02 14:18:29 DEBUG JwtAuthenticationEntryPoint:24 - Authentication operation begins--->
+2018-07-02 15:14:02 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:16:35 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:28:15 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:29:16 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:32:58 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:35:07 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:36:12 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:36:15 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:48:08 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:50:29 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 15:53:26 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 16:00:48 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 16:08:12 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 16:47:59 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 17:34:14 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 17:55:13 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 17:57:36 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:07:59 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:09:11 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:09:12 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:15:39 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:15:39 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:20:08 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:20:09 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:28:36 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:28:37 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:39:25 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:39:26 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:49:36 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:49:39 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:50:53 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:51:08 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:55:55 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:55:57 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 18:58:48 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 18:58:48 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:00:05 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:00:06 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:02:46 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:02:46 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:07:40 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:07:41 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:07:41 INFO  UserDAOImpl:37 - NONE_PROVIDED
+2018-07-02 19:07:41 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:10:01 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:10:01 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:10:01 INFO  UserDAOImpl:37 - NONE_PROVIDED
+2018-07-02 19:10:03 INFO  UserDAOImpl:44 - result from db
+2018-07-02 19:10:03 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@513efc29
+2018-07-02 19:10:04 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:26:52 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:26:52 DEBUG AuthenticationController:38 - loginUser.getUserName()-->null
+2018-07-02 19:26:52 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:26:52 INFO  UserDAOImpl:37 - NONE_PROVIDED
+2018-07-02 19:26:53 INFO  UserDAOImpl:44 - result from db
+2018-07-02 19:26:53 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@2116e2a3
+2018-07-02 19:26:53 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:33:04 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:33:04 DEBUG AuthenticationController:38 - loginUser.getUserName()-->null
+2018-07-02 19:33:04 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:33:04 INFO  UserDAOImpl:37 - NONE_PROVIDED
+2018-07-02 19:33:05 INFO  UserDAOImpl:44 - result from db
+2018-07-02 19:33:05 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@3171d39b
+2018-07-02 19:33:05 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:37:49 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:37:50 DEBUG AuthenticationController:38 - loginUser.getUserName()-->null
+2018-07-02 19:37:50 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:37:50 INFO  UserDAOImpl:37 - NONE_PROVIDED
+2018-07-02 19:37:50 INFO  UserDAOImpl:44 - result from db
+2018-07-02 19:37:50 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@4a78660c
+2018-07-02 19:37:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:40:16 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:40:16 DEBUG AuthenticationController:38 - loginUser.getUserName()-->null
+2018-07-02 19:40:16 DEBUG AuthenticationController:39 - loginUser.getUserName()-->oooo
+2018-07-02 19:40:17 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:40:17 INFO  UserDAOImpl:37 - NONE_PROVIDED
+2018-07-02 19:40:17 INFO  UserDAOImpl:44 - result from db
+2018-07-02 19:40:17 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@51e692df
+2018-07-02 19:40:17 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:44:49 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 19:49:19 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 19:49:19 DEBUG AuthenticationController:38 - loginUser.getUserName()-->test
+2018-07-02 19:49:19 DEBUG AuthenticationController:39 - loginUser.getUserName()-->oooo
+2018-07-02 19:49:20 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 19:49:20 INFO  UserDAOImpl:37 - test
+2018-07-02 19:49:20 INFO  UserDAOImpl:44 - result from db
+2018-07-02 19:49:20 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@3d72ac64
+2018-07-02 19:49:20 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 20:13:34 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 20:13:34 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin1
+2018-07-02 20:13:34 DEBUG AuthenticationController:39 - loginUser.getUserName()-->welcome
+2018-07-02 20:13:34 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:13:34 INFO  UserDAOImpl:37 - admin1
+2018-07-02 20:13:34 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 20:34:34 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 20:34:34 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin
+2018-07-02 20:34:34 DEBUG AuthenticationController:39 - loginUser.getUserName()-->123
+2018-07-02 20:34:34 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:34:34 INFO  UserDAOImpl:37 - admin
+2018-07-02 20:34:35 INFO  UserDAOImpl:44 - result from db
+2018-07-02 20:34:35 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@364f713a
+2018-07-02 20:34:35 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 20:37:38 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 20:37:38 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin
+2018-07-02 20:37:38 DEBUG AuthenticationController:39 - loginUser.getUserName()-->welcome
+2018-07-02 20:37:39 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:37:39 INFO  UserDAOImpl:37 - admin
+2018-07-02 20:37:39 INFO  UserDAOImpl:44 - result from db
+2018-07-02 20:37:39 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@58aef752
+2018-07-02 20:37:39 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 20:49:50 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 20:49:50 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin
+2018-07-02 20:49:50 DEBUG AuthenticationController:39 - loginUser.getUserName()-->admin
+2018-07-02 20:49:50 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:49:50 INFO  UserDAOImpl:37 - admin
+2018-07-02 20:49:51 INFO  UserDAOImpl:44 - result from db
+2018-07-02 20:49:51 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@fd013b1
+2018-07-02 20:49:53 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 20:54:21 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 20:54:21 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin
+2018-07-02 20:54:21 DEBUG AuthenticationController:39 - loginUser.getUserName()-->welcome
+2018-07-02 20:54:21 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:54:21 INFO  UserDAOImpl:37 - admin
+2018-07-02 20:54:21 INFO  UserDAOImpl:44 - result from db
+2018-07-02 20:54:21 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@697041a
+2018-07-02 20:54:21 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 20:59:02 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 20:59:02 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin
+2018-07-02 20:59:02 DEBUG AuthenticationController:39 - loginUser.getUserName()-->welcome
+2018-07-02 20:59:02 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:59:02 INFO  UserDAOImpl:37 - admin
+2018-07-02 20:59:02 INFO  UserDAOImpl:44 - result from db
+2018-07-02 20:59:02 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@1ff19003
+2018-07-02 20:59:02 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 20:59:02 INFO  UserDAOImpl:37 - admin
+2018-07-02 20:59:02 INFO  UserDAOImpl:44 - result from db
+2018-07-02 20:59:02 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@1ff19003
+2018-07-02 20:59:36 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 21:22:24 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 21:22:44 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 21:24:50 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 21:39:36 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 21:39:36 DEBUG AuthenticationController:38 - loginUser.getUserName()-->admin
+2018-07-02 21:39:36 DEBUG AuthenticationController:39 - loginUser.getUserName()-->welcome
+2018-07-02 21:39:37 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 21:39:37 INFO  UserDAOImpl:37 - admin
+2018-07-02 21:39:37 INFO  UserDAOImpl:44 - result from db
+2018-07-02 21:39:37 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@40950104
+2018-07-02 21:39:37 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 21:39:37 INFO  UserDAOImpl:37 - admin
+2018-07-02 21:39:37 INFO  UserDAOImpl:44 - result from db
+2018-07-02 21:39:37 INFO  UserDAOImpl:45 - com.scm.services.dao.entity.User@40950104
+2018-07-02 21:39:53 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 21:39:53 DEBUG AuthenticationController:38 - loginUser.getUserName()-->sef
+2018-07-02 21:39:53 DEBUG AuthenticationController:39 - loginUser.getUserName()-->dsf
+2018-07-02 21:39:53 INFO  UserDAOImpl:36 - result from loaduser
+2018-07-02 21:39:53 INFO  UserDAOImpl:37 - sef
+2018-07-02 21:39:53 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 21:51:15 DEBUG AuthenticationController:36 - Authentication controll calaing  begins--->
+2018-07-02 21:51:15 DEBUG AuthenticationController:38 - loginUser.getUserName()-->sef
+2018-07-02 21:51:15 DEBUG AuthenticationController:39 - loginUser.getUserName()-->dsf
+2018-07-02 21:51:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 21:51:15 INFO  UserDAOImpl:38 - sef
+2018-07-02 21:51:15 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 21:55:54 DEBUG AuthenticationController:38 - Authentication controll calaing  begins--->
+2018-07-02 21:55:54 DEBUG AuthenticationController:40 - loginUser.getUserName()-->sef
+2018-07-02 21:55:54 DEBUG AuthenticationController:41 - loginUser.getUserName()-->dsf
+2018-07-02 21:55:54 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 21:55:54 INFO  UserDAOImpl:38 - sef
+2018-07-02 21:55:54 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 22:09:46 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:09:46 DEBUG AuthenticationController:42 - loginUser.getUserName()-->sef
+2018-07-02 22:09:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->dsf
+2018-07-02 22:09:46 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:09:46 INFO  UserDAOImpl:38 - sef
+2018-07-02 22:10:54 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:10:54 DEBUG AuthenticationController:42 - loginUser.getUserName()-->sss
+2018-07-02 22:10:54 DEBUG AuthenticationController:43 - loginUser.getUserName()-->ww
+2018-07-02 22:10:54 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:10:54 INFO  UserDAOImpl:38 - sss
+2018-07-02 22:12:34 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:12:34 DEBUG AuthenticationController:42 - loginUser.getUserName()-->kjb
+2018-07-02 22:12:34 DEBUG AuthenticationController:43 - loginUser.getUserName()-->khb
+2018-07-02 22:12:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:12:34 INFO  UserDAOImpl:38 - kjb
+2018-07-02 22:13:54 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:13:54 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 22:13:54 DEBUG AuthenticationController:43 - loginUser.getUserName()-->afmin
+2018-07-02 22:13:54 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:13:54 INFO  UserDAOImpl:38 - admin
+2018-07-02 22:13:55 INFO  UserDAOImpl:45 - result from db
+2018-07-02 22:13:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@70dab086
+2018-07-02 22:14:21 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:14:21 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 22:14:21 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 22:14:21 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:14:21 INFO  UserDAOImpl:38 - admin
+2018-07-02 22:14:21 INFO  UserDAOImpl:45 - result from db
+2018-07-02 22:14:21 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@584e9053
+2018-07-02 22:14:21 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:14:21 INFO  UserDAOImpl:38 - admin
+2018-07-02 22:14:21 INFO  UserDAOImpl:45 - result from db
+2018-07-02 22:14:21 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@584e9053
+2018-07-02 22:14:35 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 22:47:03 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 22:56:04 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:56:08 DEBUG AuthenticationController:42 - loginUser.getUserName()-->sdf
+2018-07-02 22:56:08 DEBUG AuthenticationController:43 - loginUser.getUserName()-->ds
+2018-07-02 22:56:19 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:56:20 INFO  UserDAOImpl:38 - sdf
+2018-07-02 22:57:15 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 22:57:15 DEBUG AuthenticationController:42 - loginUser.getUserName()-->dewf
+2018-07-02 22:57:15 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sd
+2018-07-02 22:57:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 22:57:15 INFO  UserDAOImpl:38 - dewf
+2018-07-02 23:01:16 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:01:16 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:01:16 DEBUG AuthenticationController:43 - loginUser.getUserName()-->e
+2018-07-02 23:01:16 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:01:16 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:01:17 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:01:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7259da5e
+2018-07-02 23:01:21 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:01:21 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:01:21 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:01:21 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:01:21 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:01:21 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:01:21 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6b7338b4
+2018-07-02 23:01:21 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:01:21 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:01:21 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:01:21 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6b7338b4
+2018-07-02 23:01:32 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:03:26 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:05:41 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:05:41 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:05:41 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:05:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1d6d3cc4
+2018-07-02 23:05:41 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:05:41 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:05:41 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:05:41 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:05:41 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:05:41 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:05:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3ceb0d97
+2018-07-02 23:05:41 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:05:41 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:05:41 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:05:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3ceb0d97
+2018-07-02 23:06:43 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:13:05 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:13:05 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:13:06 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:13:06 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@74e48245
+2018-07-02 23:13:06 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:13:06 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:13:06 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:13:06 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:13:06 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:13:06 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:13:06 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5cf5d30f
+2018-07-02 23:13:06 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:13:06 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:13:06 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:13:06 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5cf5d30f
+2018-07-02 23:13:12 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:13:42 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:13:42 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:13:42 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:13:42 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@613fa8e7
+2018-07-02 23:13:42 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:13:42 DEBUG AuthenticationController:42 - loginUser.getUserName()-->happy
+2018-07-02 23:13:42 DEBUG AuthenticationController:43 - loginUser.getUserName()-->happy
+2018-07-02 23:13:42 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:13:42 INFO  UserDAOImpl:38 - happy
+2018-07-02 23:14:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:14:15 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:14:15 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:14:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3f833cb5
+2018-07-02 23:14:15 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:14:15 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:14:15 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:14:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:14:15 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:14:15 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:14:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7d37e587
+2018-07-02 23:14:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:14:15 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:14:15 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:14:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7d37e587
+2018-07-02 23:14:27 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:16:39 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:16:39 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:16:39 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:16:39 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1d1db8f6
+2018-07-02 23:16:39 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:16:39 DEBUG AuthenticationController:42 - loginUser.getUserName()-->asd
+2018-07-02 23:16:39 DEBUG AuthenticationController:43 - loginUser.getUserName()-->as
+2018-07-02 23:16:39 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:16:39 INFO  UserDAOImpl:38 - asd
+2018-07-02 23:16:48 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:16:48 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:16:48 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:16:48 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@52326535
+2018-07-02 23:16:48 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:16:48 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:16:48 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:16:48 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:16:48 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:16:48 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:16:48 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7cb3b9ee
+2018-07-02 23:16:48 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:16:48 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:16:48 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:16:48 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7cb3b9ee
+2018-07-02 23:16:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:17:24 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:17:24 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:17:24 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:17:25 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@47a6e28d
+2018-07-02 23:17:25 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:17:25 DEBUG AuthenticationController:42 - loginUser.getUserName()-->kl
+2018-07-02 23:17:25 DEBUG AuthenticationController:43 - loginUser.getUserName()-->;lm
+2018-07-02 23:17:25 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:17:25 INFO  UserDAOImpl:38 - kl
+2018-07-02 23:17:39 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:17:39 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:17:39 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:17:39 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@d623dfe
+2018-07-02 23:17:39 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:17:39 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:17:39 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:17:39 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:17:39 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:17:39 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:17:39 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7ef72fb5
+2018-07-02 23:17:39 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:17:39 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:17:39 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:17:39 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7ef72fb5
+2018-07-02 23:17:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:23:00 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:23:01 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:23:02 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:23:02 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4d12b6cd
+2018-07-02 23:23:03 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:23:03 DEBUG AuthenticationController:42 - loginUser.getUserName()-->sad
+2018-07-02 23:23:03 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sda
+2018-07-02 23:23:03 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:23:03 INFO  UserDAOImpl:38 - sad
+2018-07-02 23:24:17 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:24:17 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:24:17 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:24:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@f20d83a
+2018-07-02 23:24:17 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:24:17 DEBUG AuthenticationController:42 - loginUser.getUserName()-->sad
+2018-07-02 23:24:17 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sda
+2018-07-02 23:24:17 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:24:17 INFO  UserDAOImpl:38 - sad
+2018-07-02 23:25:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:04 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:25:04 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:25:04 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3fddc245
+2018-07-02 23:25:04 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:25:04 DEBUG AuthenticationController:42 - loginUser.getUserName()-->asdd
+2018-07-02 23:25:04 DEBUG AuthenticationController:43 - loginUser.getUserName()-->asd
+2018-07-02 23:25:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:04 INFO  UserDAOImpl:38 - asdd
+2018-07-02 23:25:36 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:36 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:25:36 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:25:36 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@679ff026
+2018-07-02 23:25:40 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:25:40 DEBUG AuthenticationController:42 - loginUser.getUserName()-->sd
+2018-07-02 23:25:40 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sa
+2018-07-02 23:25:40 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:40 INFO  UserDAOImpl:38 - sd
+2018-07-02 23:25:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:57 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:25:57 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:25:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@52964a36
+2018-07-02 23:25:57 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:25:57 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:25:57 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:25:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:57 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:25:57 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:25:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@16a733a8
+2018-07-02 23:25:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:25:57 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:25:57 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:25:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@16a733a8
+2018-07-02 23:26:17 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:32:49 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:32:49 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:32:49 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:32:50 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:32:50 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:32:50 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:32:50 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@522a1e61
+2018-07-02 23:32:50 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:32:50 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:32:50 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:32:50 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@522a1e61
+2018-07-02 23:33:43 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-02 23:36:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:36:04 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:36:04 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:36:04 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@16babf8e
+2018-07-02 23:36:04 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:36:04 DEBUG AuthenticationController:42 - loginUser.getUserName()-->ds
+2018-07-02 23:36:04 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sda
+2018-07-02 23:36:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:36:04 INFO  UserDAOImpl:38 - ds
+2018-07-02 23:37:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:37:35 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:37:35 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:37:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1423b51c
+2018-07-02 23:37:35 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:37:35 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:37:35 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:37:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:37:35 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:37:35 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:37:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@568afb25
+2018-07-02 23:37:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:37:35 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:37:35 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:37:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@568afb25
+2018-07-02 23:44:05 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:44:05 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:44:05 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:44:05 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@714770c8
+2018-07-02 23:44:06 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:44:06 DEBUG AuthenticationController:42 - loginUser.getUserName()-->d
+2018-07-02 23:44:06 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sd
+2018-07-02 23:44:06 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:44:06 INFO  UserDAOImpl:38 - d
+2018-07-02 23:44:13 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:44:13 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:44:13 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:44:13 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@414df72
+2018-07-02 23:44:13 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-02 23:44:13 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-02 23:44:13 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-02 23:44:13 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:44:13 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:44:17 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:44:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@720452a3
+2018-07-02 23:44:17 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-02 23:44:17 INFO  UserDAOImpl:38 - admin
+2018-07-02 23:44:17 INFO  UserDAOImpl:45 - result from db
+2018-07-02 23:44:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@720452a3
+2018-07-02 23:44:31 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 21:38:53 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-03 21:38:53 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-03 21:38:53 DEBUG AuthenticationController:43 - loginUser.getUserName()-->23
+2018-07-03 21:38:54 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 21:38:54 INFO  UserDAOImpl:38 - admin
+2018-07-03 21:38:55 INFO  UserDAOImpl:45 - result from db
+2018-07-03 21:38:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1a25a8fb
+2018-07-03 21:39:35 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-03 21:39:35 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-03 21:39:35 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-03 21:39:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 21:39:35 INFO  UserDAOImpl:38 - admin
+2018-07-03 21:39:35 INFO  UserDAOImpl:45 - result from db
+2018-07-03 21:39:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3dd5c6c2
+2018-07-03 21:39:55 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-03 21:39:55 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-03 21:39:55 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-03 21:39:55 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 21:39:55 INFO  UserDAOImpl:38 - admin
+2018-07-03 21:39:55 INFO  UserDAOImpl:45 - result from db
+2018-07-03 21:39:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3ab3d572
+2018-07-03 21:39:55 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 21:39:55 INFO  UserDAOImpl:38 - admin
+2018-07-03 21:39:55 INFO  UserDAOImpl:45 - result from db
+2018-07-03 21:39:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3ab3d572
+2018-07-03 21:40:11 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 21:42:19 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 21:52:32 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 21:56:02 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 21:59:26 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:02:46 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-03 22:02:46 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-03 22:02:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-03 22:02:47 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:02:47 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:02:48 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:02:48 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@627e6ed2
+2018-07-03 22:02:49 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:02:49 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:02:49 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:02:49 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@627e6ed2
+2018-07-03 22:03:18 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:04:13 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:06:41 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:15:02 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:19:50 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:20:41 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:22:29 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:27:52 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:27:52 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:27:53 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:27:53 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@72a3dd04
+2018-07-03 22:27:53 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 22:27:53 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 22:28:27 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:28:27 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:28:27 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:28:27 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@36b38c43
+2018-07-03 22:28:37 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:28:37 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:28:37 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:28:37 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2b3f982d
+2018-07-03 22:33:04 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:34:02 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 22:34:27 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:34:27 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:34:27 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:34:27 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5b57b81a
+2018-07-03 22:38:25 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:38:25 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:38:25 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:38:25 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2fef0e43
+2018-07-03 22:38:32 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:38:32 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:38:32 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:38:32 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@662c3796
+2018-07-03 22:42:56 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:42:56 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:42:56 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:42:56 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@55c821a8
+2018-07-03 22:44:05 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:44:05 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:44:05 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:44:05 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@297c2512
+2018-07-03 22:45:51 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:45:51 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:45:51 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:45:51 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@33fc3105
+2018-07-03 22:47:24 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:47:24 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:47:24 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:47:24 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3cbe13f7
+2018-07-03 22:48:47 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 22:48:47 INFO  UserDAOImpl:38 - admin
+2018-07-03 22:48:47 INFO  UserDAOImpl:45 - result from db
+2018-07-03 22:48:47 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7f31d974
+2018-07-03 23:04:38 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:04:38 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:04:39 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:04:39 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1baf6f5d
+2018-07-03 23:04:41 DEBUG AuthenticationController:40 - Authentication controll calaing  begins--->
+2018-07-03 23:04:41 DEBUG AuthenticationController:42 - loginUser.getUserName()-->admin
+2018-07-03 23:04:41 DEBUG AuthenticationController:43 - loginUser.getUserName()-->welcome
+2018-07-03 23:04:41 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:04:41 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:04:41 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:04:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@621ea4f
+2018-07-03 23:04:42 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:04:42 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:04:42 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:04:42 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@621ea4f
+2018-07-03 23:04:56 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:04:56 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:04:56 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:04:56 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@45bd505e
+2018-07-03 23:04:56 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:04:56 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:07:46 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:07:46 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:08:12 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:08:12 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:11:27 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:11:27 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:13:17 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:13:17 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:13:41 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:13:41 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:15:00 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:15:00 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:16:22 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:16:22 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:19:38 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:19:40 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:19:43 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-03 23:19:43 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-03 23:20:01 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:20:02 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:20:19 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:20:19 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@36e333fb
+2018-07-03 23:21:04 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 23:21:50 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 23:22:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:22:04 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:22:05 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:22:05 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@351e5324
+2018-07-03 23:22:16 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-03 23:24:40 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-03 23:24:40 INFO  UserDAOImpl:38 - admin
+2018-07-03 23:24:41 INFO  UserDAOImpl:45 - result from db
+2018-07-03 23:24:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@28426839
+2018-07-04 18:50:25 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 18:50:25 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sytem
+2018-07-04 18:50:25 DEBUG AuthenticationController:44 - loginUser.getUserName()-->eadjn
+2018-07-04 18:50:25 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:50:25 INFO  UserDAOImpl:38 - sytem
+2018-07-04 18:50:33 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 18:50:33 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 18:50:33 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 18:50:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:50:33 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:50:34 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:50:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4012a3b2
+2018-07-04 18:50:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:50:34 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:50:34 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:50:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4012a3b2
+2018-07-04 18:50:44 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:50:44 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:50:44 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:50:44 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@326f7b05
+2018-07-04 18:50:54 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:50:54 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:50:54 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:50:54 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1c30f970
+2018-07-04 18:52:28 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:52:28 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:52:28 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:52:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@11ede085
+2018-07-04 18:52:53 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:52:53 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:52:53 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:52:53 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6523bb0c
+2018-07-04 18:53:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 18:53:04 INFO  UserDAOImpl:38 - admin
+2018-07-04 18:53:04 INFO  UserDAOImpl:45 - result from db
+2018-07-04 18:53:04 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5f651b6a
+2018-07-04 18:56:05 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 18:58:00 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 18:59:19 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 18:59:26 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:00:00 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:24:54 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:31:58 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:32:16 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:32:58 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:33:37 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:38:41 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:39:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:40:57 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:41:43 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:44:41 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:45:16 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:52:41 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:52:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 19:53:03 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 20:08:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 20:08:58 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 20:10:50 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 20:14:10 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 20:17:40 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 20:18:16 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:18:17 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 20:18:17 DEBUG AuthenticationController:44 - loginUser.getUserName()-->wew
+2018-07-04 20:18:22 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:18:23 INFO  UserDAOImpl:38 - admin
+2018-07-04 20:18:24 INFO  UserDAOImpl:45 - result from db
+2018-07-04 20:18:24 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@22b9cc84
+2018-07-04 20:18:32 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:18:32 DEBUG AuthenticationController:43 - loginUser.getUserName()-->happy
+2018-07-04 20:18:32 DEBUG AuthenticationController:44 - loginUser.getUserName()-->dsd
+2018-07-04 20:18:32 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:18:32 INFO  UserDAOImpl:38 - happy
+2018-07-04 20:19:50 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:19:50 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sfd
+2018-07-04 20:19:50 DEBUG AuthenticationController:44 - loginUser.getUserName()-->fd
+2018-07-04 20:19:50 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:19:50 INFO  UserDAOImpl:38 - sfd
+2018-07-04 20:20:16 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:20:16 DEBUG AuthenticationController:43 - loginUser.getUserName()-->sfd
+2018-07-04 20:20:16 DEBUG AuthenticationController:44 - loginUser.getUserName()-->fd
+2018-07-04 20:20:16 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:20:16 INFO  UserDAOImpl:38 - sfd
+2018-07-04 20:25:45 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:25:45 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:25:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 20:25:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->d
+2018-07-04 20:25:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 20:25:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->d
+2018-07-04 20:25:47 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:25:48 INFO  UserDAOImpl:38 - s
+2018-07-04 20:25:47 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:25:48 INFO  UserDAOImpl:38 - s
+2018-07-04 20:25:52 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:25:52 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 20:25:52 DEBUG AuthenticationController:44 - loginUser.getUserName()-->d
+2018-07-04 20:25:53 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:25:53 INFO  UserDAOImpl:38 - s
+2018-07-04 20:27:27 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:27:27 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 20:27:27 DEBUG AuthenticationController:44 - loginUser.getUserName()-->s
+2018-07-04 20:27:27 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:27:27 INFO  UserDAOImpl:38 - s
+2018-07-04 20:28:05 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:28:05 DEBUG AuthenticationController:43 - loginUser.getUserName()-->d
+2018-07-04 20:28:05 DEBUG AuthenticationController:44 - loginUser.getUserName()-->d
+2018-07-04 20:28:05 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:28:05 INFO  UserDAOImpl:38 - d
+2018-07-04 20:29:20 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:29:20 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 20:29:20 DEBUG AuthenticationController:44 - loginUser.getUserName()-->d
+2018-07-04 20:29:20 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:29:20 INFO  UserDAOImpl:38 - s
+2018-07-04 20:29:35 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:29:35 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 20:29:35 DEBUG AuthenticationController:44 - loginUser.getUserName()-->d
+2018-07-04 20:29:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:29:35 INFO  UserDAOImpl:38 - s
+2018-07-04 20:30:11 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:30:11 DEBUG AuthenticationController:43 - loginUser.getUserName()-->e
+2018-07-04 20:30:11 DEBUG AuthenticationController:44 - loginUser.getUserName()-->we
+2018-07-04 20:30:11 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:30:11 INFO  UserDAOImpl:38 - e
+2018-07-04 20:30:23 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:30:23 DEBUG AuthenticationController:43 - loginUser.getUserName()-->e
+2018-07-04 20:30:23 DEBUG AuthenticationController:44 - loginUser.getUserName()-->we
+2018-07-04 20:30:24 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:30:24 INFO  UserDAOImpl:38 - e
+2018-07-04 20:32:46 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:32:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->ds
+2018-07-04 20:32:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->dsg
+2018-07-04 20:32:46 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:32:46 INFO  UserDAOImpl:38 - ds
+2018-07-04 20:38:42 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:38:42 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:38:42 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:38:42 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:38:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->w
+2018-07-04 20:38:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->qw
+2018-07-04 20:39:03 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:39:03 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:39:03 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:39:03 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:39:03 INFO  UserDAOImpl:38 - w
+2018-07-04 20:39:03 INFO  UserDAOImpl:38 - w
+2018-07-04 20:39:03 INFO  UserDAOImpl:38 - w
+2018-07-04 20:39:03 INFO  UserDAOImpl:38 - w
+2018-07-04 20:41:21 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 20:41:21 DEBUG AuthenticationController:43 - loginUser.getUserName()-->e
+2018-07-04 20:41:21 DEBUG AuthenticationController:44 - loginUser.getUserName()-->e
+2018-07-04 20:41:21 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 20:41:21 INFO  UserDAOImpl:38 - e
+2018-07-04 20:59:59 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 21:00:01 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 21:00:01 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 21:00:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:00:05 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:00:12 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:00:12 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@54773d9c
+2018-07-04 21:00:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:00:15 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:00:15 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:00:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@54773d9c
+2018-07-04 21:00:54 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:00:56 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:00:56 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:00:56 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:00:56 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:00:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@27fecea5
+2018-07-04 21:00:59 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:00:59 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7f736648
+2018-07-04 21:11:41 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 21:11:44 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 21:11:44 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 21:11:48 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:11:51 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:12:16 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:12:16 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5d5cf02d
+2018-07-04 21:12:18 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:12:18 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:12:20 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:12:20 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5d5cf02d
+2018-07-04 21:50:36 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:50:37 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:50:40 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:50:40 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5adf635b
+2018-07-04 21:54:14 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:54:14 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:54:14 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:54:14 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6aec1f19
+2018-07-04 21:56:42 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 21:56:42 INFO  UserDAOImpl:38 - admin
+2018-07-04 21:56:42 INFO  UserDAOImpl:45 - result from db
+2018-07-04 21:56:42 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6cc54fb8
+2018-07-04 22:13:03 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:13:03 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:13:05 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:13:05 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@79c9abe
+2018-07-04 22:13:06 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:13:06 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 22:13:06 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 22:13:07 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:13:07 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:13:07 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:13:07 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5191d5eb
+2018-07-04 22:13:07 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:13:07 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:13:07 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:13:07 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5191d5eb
+2018-07-04 22:14:32 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:14:33 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:14:33 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:14:33 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@d1d6aad
+2018-07-04 22:14:33 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:14:33 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 22:14:33 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 22:14:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:14:33 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:14:33 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:14:33 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@362cae82
+2018-07-04 22:14:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:14:33 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:14:33 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:14:33 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@362cae82
+2018-07-04 22:16:33 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:16:33 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 22:16:33 DEBUG AuthenticationController:44 - loginUser.getUserName()-->s
+2018-07-04 22:16:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:16:33 INFO  UserDAOImpl:38 - s
+2018-07-04 22:21:48 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:21:48 DEBUG AuthenticationController:43 - loginUser.getUserName()-->s
+2018-07-04 22:21:48 DEBUG AuthenticationController:44 - loginUser.getUserName()-->s
+2018-07-04 22:21:48 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:21:48 INFO  UserDAOImpl:38 - s
+2018-07-04 22:21:55 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:21:55 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 22:21:55 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 22:21:55 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:21:55 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:21:55 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:21:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5502d975
+2018-07-04 22:21:55 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:21:55 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:21:55 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:21:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5502d975
+2018-07-04 22:22:50 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:22:50 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:22:50 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:22:50 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4449faa2
+2018-07-04 22:24:08 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 22:56:29 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:56:29 DEBUG AuthenticationController:43 - loginUser.getUserName()-->ee
+2018-07-04 22:56:29 DEBUG AuthenticationController:44 - loginUser.getUserName()-->e
+2018-07-04 22:56:32 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:56:33 INFO  UserDAOImpl:38 - ee
+2018-07-04 22:57:15 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 22:57:15 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 22:57:15 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 22:57:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:57:15 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:57:19 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:57:19 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@43bafeca
+2018-07-04 22:57:22 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:57:22 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:57:22 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:57:22 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@43bafeca
+2018-07-04 22:57:38 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:57:38 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:57:38 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:57:38 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@53b074
+2018-07-04 22:57:41 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:57:41 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:57:41 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:57:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@40640ffe
+2018-07-04 22:59:02 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:59:02 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:59:02 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:59:02 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@591d5328
+2018-07-04 22:59:22 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 22:59:22 INFO  UserDAOImpl:38 - admin
+2018-07-04 22:59:22 INFO  UserDAOImpl:45 - result from db
+2018-07-04 22:59:22 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5b00b0e0
+2018-07-04 23:00:49 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:00:49 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:00:50 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:00:50 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7609b78c
+2018-07-04 23:01:41 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:01:41 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:01:41 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:01:41 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@371f5942
+2018-07-04 23:16:51 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 23:25:56 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 23:25:57 DEBUG AuthenticationController:43 - loginUser.getUserName()-->r
+2018-07-04 23:25:57 DEBUG AuthenticationController:44 - loginUser.getUserName()-->e
+2018-07-04 23:26:05 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:26:07 INFO  UserDAOImpl:38 - r
+2018-07-04 23:26:53 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 23:26:53 DEBUG AuthenticationController:43 - loginUser.getUserName()-->d
+2018-07-04 23:26:53 DEBUG AuthenticationController:44 - loginUser.getUserName()-->s
+2018-07-04 23:26:53 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:26:53 INFO  UserDAOImpl:38 - d
+2018-07-04 23:27:23 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 23:27:23 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 23:27:23 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 23:27:24 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:27:24 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:27:26 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:27:26 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@26a76caf
+2018-07-04 23:27:26 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:27:26 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:27:27 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:27:27 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@26a76caf
+2018-07-04 23:28:27 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:28:27 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:28:28 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:28:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5da35d14
+2018-07-04 23:34:37 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:34:37 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:34:37 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:34:37 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@d9d1320
+2018-07-04 23:34:42 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:34:45 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:34:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:34:57 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:34:57 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:34:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@79acddc7
+2018-07-04 23:39:22 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 23:39:22 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 23:39:22 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 23:39:23 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:39:23 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:39:23 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:39:23 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6d1a40af
+2018-07-04 23:39:23 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:39:23 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:39:23 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:39:23 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6d1a40af
+2018-07-04 23:39:30 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:39:30 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:39:30 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:39:30 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@78c59b
+2018-07-04 23:39:30 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:39:31 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:40:43 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:40:43 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:40:44 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:40:44 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5fa61d98
+2018-07-04 23:40:44 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:40:44 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:40:45 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:40:45 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:40:45 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:40:45 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1e7844ce
+2018-07-04 23:40:59 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:40:59 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:40:59 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:40:59 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@8ff6811
+2018-07-04 23:41:00 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:41:00 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:41:00 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:41:00 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@79b0e134
+2018-07-04 23:41:00 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:41:00 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:41:10 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:41:10 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:41:10 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:41:10 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2e2a15c9
+2018-07-04 23:41:11 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:41:11 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:47:55 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:47:55 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:47:55 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:47:55 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@26030133
+2018-07-04 23:47:55 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:47:55 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:48:20 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:48:20 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:48:20 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:48:20 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@15237832
+2018-07-04 23:48:21 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:48:21 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:48:46 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:48:46 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:48:46 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:48:46 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7851f544
+2018-07-04 23:48:46 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:48:46 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:50:49 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-04 23:51:46 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 23:51:46 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 23:51:46 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 23:51:46 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:51:46 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:51:46 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:51:46 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@36528437
+2018-07-04 23:51:46 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:51:46 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:51:46 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:51:46 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@36528437
+2018-07-04 23:51:51 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:51:51 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:51:51 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:51:51 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@100287e1
+2018-07-04 23:51:51 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:51:51 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-04 23:51:52 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:51:52 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:51:52 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:51:52 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@31818a02
+2018-07-04 23:58:38 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-04 23:58:38 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-04 23:58:38 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-04 23:58:38 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:58:38 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:58:44 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:58:44 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@190d4490
+2018-07-04 23:58:44 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:58:44 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:58:44 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:58:44 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@190d4490
+2018-07-04 23:59:00 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:59:00 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:59:01 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-04 23:59:01 INFO  UserDAOImpl:38 - admin
+2018-07-04 23:59:01 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:59:01 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@dae899e
+2018-07-04 23:59:02 INFO  UserDAOImpl:45 - result from db
+2018-07-04 23:59:02 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@62511d2
+2018-07-04 23:59:02 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-04 23:59:03 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-05 00:04:29 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-05 00:04:29 INFO  UserDAOImpl:38 - admin
+2018-07-05 00:04:29 INFO  UserDAOImpl:45 - result from db
+2018-07-05 00:04:29 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1a5179a9
+2018-07-05 00:04:29 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-05 00:04:29 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-05 00:04:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-05 00:04:33 INFO  UserDAOImpl:38 - admin
+2018-07-05 00:04:33 INFO  UserDAOImpl:45 - result from db
+2018-07-05 00:04:33 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@78ae8c35
+2018-07-05 00:07:09 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-05 00:07:09 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-05 00:07:09 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-05 00:07:09 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-05 00:07:09 INFO  UserDAOImpl:38 - admin
+2018-07-05 00:07:09 INFO  UserDAOImpl:45 - result from db
+2018-07-05 00:07:09 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@45d2dff9
+2018-07-05 00:07:09 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-05 00:07:09 INFO  UserDAOImpl:38 - admin
+2018-07-05 00:07:09 INFO  UserDAOImpl:45 - result from db
+2018-07-05 00:07:09 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@45d2dff9
+2018-07-05 00:07:14 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-05 00:07:14 INFO  UserDAOImpl:38 - admin
+2018-07-05 00:07:14 INFO  UserDAOImpl:45 - result from db
+2018-07-05 00:07:14 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@47c6a580
+2018-07-05 00:07:14 DEBUG ClassificationController:45 - getClassifications operation begins--->
+2018-07-05 00:07:14 DEBUG ClassificationDAOImpl:31 - getclassfications operation dao layer begins
+2018-07-05 00:07:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-05 00:07:15 INFO  UserDAOImpl:38 - admin
+2018-07-05 00:07:15 INFO  UserDAOImpl:45 - result from db
+2018-07-05 00:07:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4fa643ee
