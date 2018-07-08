@@ -58,8 +58,17 @@ CREATE TABLE IF NOT EXISTS `user`( `id` INT(10) NOT NULL, `username` VARCHAR(100
 `contact_no` NUMERIC, PRIMARY KEY (`id`) ); 
 
 
-
-
 //password:welcome
 insert into `user` (`id`, `username`, `password`, `email`, `contact_no`) 
 values('1','admin','$2a$04$HYK2s1ChruRfIq1dhqCPN.Li12XMFFK1B7Aj6JDhM1PaPGZL674gC','user@gmail.com',12345678);
+
+ALTER TABLE classification MODIFY `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE','SCHOLARSHIP','BRANCH');
+
+
+CREATE TABLE certificates(id int,code varchar(100),name varchar(200),type int,FOREIGN KEY (type) REFERENCES classification(ID));
+
+INSERT INTO certificates(id,code,name,type) values (1,"10th","Tenth Class",(SELECT ID FROM classification where type = "SCHOLARSHIP" and CODE="Yes"));
+INSERT INTO certificates(id,code,name,type) values (2,"12th","Twelth Class",(SELECT ID FROM classification where type = "SCHOLARSHIP" and CODE="Yes"));
+INSERT INTO certificates(id,code,name,type) values (3,"Address","Address",(SELECT ID FROM classification where type = "SCHOLARSHIP" and CODE="No"));
+INSERT INTO certificates(id,code,name,type) values (4,"Caste","Caste",(SELECT ID FROM classification where type = "SCHOLARSHIP" and CODE="Yes"));
+INSERT INTO certificates(id,code,name,type) values (5,"BIRTHCERT","Birth Certificate",null);
