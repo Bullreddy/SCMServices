@@ -42,7 +42,7 @@ public class ClassificationController {
 
 	@RequestMapping(value = "/getClassifications", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<GetClassificationResponseVO> getMaster(@RequestBody GetClassificationRequestVO requestVO,BindingResult bindingResults) {
-		LOGGER.debug("getClassifications operation begins--->");
+		LOGGER.debug("getClassifications operation begins--->"+requestVO.getBranchID());
 		GetClassificationResponseVO responseVO = new GetClassificationResponseVO();
 		try {
 			if(bindingResults!=null && bindingResults.hasErrors()) {
@@ -52,6 +52,7 @@ public class ClassificationController {
 			}
 		GetClassificationRequestDTO requestDTO = new GetClassificationRequestDTO();
 		requestDTO.setTypes(this.mapper.map(requestVO.getTypes(), new TypeToken<List<ClassificationType>>() {}.getType()));
+		requestDTO.setBranchID(requestVO.getBranchID());
 		GetClassificationResponseDTO responseDTO = this.masterService.getClassificationDetails(requestDTO);
 		responseVO = this.mapper.map(responseDTO, GetClassificationResponseVO.class);
 		return new ResponseEntity(responseVO, HttpStatus.OK);

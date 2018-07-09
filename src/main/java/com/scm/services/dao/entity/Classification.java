@@ -34,6 +34,9 @@ public class Classification {
 	@Enumerated(EnumType.STRING)
 	@Column(name="type")
 	private ClassificationType classificationType;
+	
+	@Column(name = "branchid")
+	private Long branchID;
 
 	public Classification() {
 	}
@@ -77,6 +80,14 @@ public class Classification {
 
 	public void setClassificationType(ClassificationType classificationType) {
 		this.classificationType = classificationType;
+	}
+
+	public Long getBranchID() {
+		return branchID;
+	}
+
+	public void setBranchID(Long branchID) {
+		this.branchID = branchID;
 	}
 
 } 

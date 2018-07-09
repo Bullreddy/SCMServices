@@ -72,3 +72,9 @@ INSERT INTO certificates(id,code,name,type) values (2,"12th","Twelth Class",(SEL
 INSERT INTO certificates(id,code,name,type) values (3,"Address","Address",(SELECT ID FROM classification where type = "SCHOLARSHIP" and CODE="No"));
 INSERT INTO certificates(id,code,name,type) values (4,"Caste","Caste",(SELECT ID FROM classification where type = "SCHOLARSHIP" and CODE="Yes"));
 INSERT INTO certificates(id,code,name,type) values (5,"BIRTHCERT","Birth Certificate",null);
+
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('13','BRANCH1','Branch 1','BRANCH','2018-05-09 22:57:33','2018-05-09 22:57:36');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('14','BRANCH2','Branch 2','BRANCH','2018-05-09 23:01:04','2018-05-09 23:01:09');
+
+
+ALTER TABLE classification ADD branchid int references classification(id);
