@@ -78,3 +78,6 @@ insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `dat
 
 
 ALTER TABLE classification ADD branchid int references classification(id);
+
+SET SQL_SAFE_UPDATES = 0;
+update classification set branchid = 13 where id in (select x.id from (select id from classification where type <> 'BRANCH') as x);

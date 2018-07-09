@@ -1,6 +1,5 @@
 package com.scm.services.daoimpl;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Query;
@@ -8,13 +7,11 @@ import javax.persistence.Query;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 
-import com.bulls.scm.common.vo.StudentVO;
 import com.scm.services.common.ClassificationType;
 import com.scm.services.common.MapperUtils;
 import com.scm.services.common.Status;
 import com.scm.services.common.WrappedResponse;
 import com.scm.services.dao.ClassificationDAO;
-import com.scm.services.dao.entity.Admission;
 import com.scm.services.dao.entity.Classification;
 import com.scm.services.dao.entity.GetClassificationResponse;
 
