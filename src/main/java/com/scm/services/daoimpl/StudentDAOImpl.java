@@ -1,12 +1,16 @@
 package com.scm.services.daoimpl;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
 
 import org.apache.log4j.Logger;
+
+import org.hibernate.Criteria;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -14,7 +18,11 @@ import com.bulls.scm.common.vo.StudentVO;
 import com.scm.services.common.MapperUtils;
 import com.scm.services.dao.StudentDAO;
 import com.scm.services.dao.entity.Admission;
+
 import com.scm.services.dao.entity.Datasourceconfig;
+
+import com.scm.services.dao.entity.StudentCertificate;
+
 
 @Repository
 public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
@@ -61,9 +69,50 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 			LOGGER.info("save student... update........");
 			LOGGER.info("save student... update........"+admission.getId());
 			getEM().merge(admission);
+
 		}
+
+		
+		saveCertificates(admission,studentVO);
+
 		studentVO = mapper.map(admission, StudentVO.class);
 		return studentVO;
+	}
+
+	private void saveCertificates(Admission admission, StudentVO studentVO) {
+		List<String> certificatesIDs = new ArrayList<>();
+		if(studentVO.getCertificateIds() !=null) {
+			Query query = getEM().createNamedQuery("getStudentCertificateByStudentAndCertificateID");
+
+			studentVO.getCertificateIds().forEach(certificateID ->{
+				query.setParameter("studentID", admission.getId());
+				query.setParameter("certificateID", Integer.valueOf((String)certificateID));
+				StudentCertificate studentCertificate = null;
+					List<StudentCertificate> resultList = (List<StudentCertificate>) query.getResultList();
+					if(resultList!=null && !resultList.isEmpty())
+					studentCertificate = resultList.get(0);
+				if(null == studentCertificate)
+					studentCertificate = new StudentCertificate();
+				studentCertificate.setStudentid(admission.getId());
+				studentCertificate.setCertificateid(Integer.valueOf((String)certificateID));
+				if(studentCertificate.getId() == 0) {
+					getEM().persist(studentCertificate);
+				}else
+					getEM().merge(studentCertificate);
+				certificatesIDs.add((String)certificateID);
+			});
+			
+			Query certificatesQuery = getEM().createNamedQuery("getStudentCertificateByStudentID");
+			certificatesQuery.setParameter("studentID", admission.getId());
+			
+			List<StudentCertificate> studentCertificates = certificatesQuery.getResultList();
+			Iterator<StudentCertificate> iter = studentCertificates.iterator();
+			while(iter.hasNext()) {
+				StudentCertificate studentCertificate = iter.next();
+				if(!certificatesIDs.contains(String.valueOf(studentCertificate.getCertificateid())))
+					getEM().remove(studentCertificate);
+			}
+		}
 	}
 
 	@Override
