@@ -41,22 +41,26 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 	}
 
 	private void saveCertificates(Admission admission, StudentVO studentVO) {
-		List<Integer> certificatesIDs = new ArrayList<>();
+		List<String> certificatesIDs = new ArrayList<>();
 		if(studentVO.getCertificateIds() !=null) {
 			Query query = getEM().createNamedQuery("getStudentCertificateByStudentAndCertificateID");
 
 			studentVO.getCertificateIds().forEach(certificateID ->{
 				query.setParameter("studentID", admission.getId());
 				query.setParameter("certificateID", Integer.valueOf((String)certificateID));
-				StudentCertificate studentCertificate = (StudentCertificate) query.getSingleResult();
+				StudentCertificate studentCertificate = null;
+					List<StudentCertificate> resultList = (List<StudentCertificate>) query.getResultList();
+					if(resultList!=null && !resultList.isEmpty())
+					studentCertificate = resultList.get(0);
 				if(null == studentCertificate)
 					studentCertificate = new StudentCertificate();
 				studentCertificate.setStudentid(admission.getId());
 				studentCertificate.setCertificateid(Integer.valueOf((String)certificateID));
-				if(studentCertificate.getId() !=null) {
+				if(studentCertificate.getId() == 0) {
+					getEM().persist(studentCertificate);
+				}else
 					getEM().merge(studentCertificate);
-				}
-				certificatesIDs.add(Integer.valueOf((String)certificateID));
+				certificatesIDs.add((String)certificateID);
 			});
 			
 			Query certificatesQuery = getEM().createNamedQuery("getStudentCertificateByStudentID");
@@ -66,8 +70,8 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 			Iterator<StudentCertificate> iter = studentCertificates.iterator();
 			while(iter.hasNext()) {
 				StudentCertificate studentCertificate = iter.next();
-				if(certificatesIDs.contains(studentCertificate.getCertificateid()));
-					iter.remove();
+				if(!certificatesIDs.contains(String.valueOf(studentCertificate.getCertificateid())))
+					getEM().remove(studentCertificate);
 			}
 		}
 	}

@@ -25,7 +25,8 @@ public class StudentCertificate implements Serializable {
 	private int certificateid;
 
 	@Id
-	private Integer id;
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private int id;
 
 	private int studentid;
 
@@ -40,11 +41,11 @@ public class StudentCertificate implements Serializable {
 		this.certificateid = certificateid;
 	}
 
-	public Integer getId() {
+	public int getId() {
 		return this.id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(int id) {
 		this.id = id;
 	}
 
