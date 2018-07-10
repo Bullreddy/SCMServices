@@ -15,45 +15,50 @@ import com.bulls.scm.common.vo.StudentVO;
 import com.bulls.scm.common.vo.UserVO;
 import com.scm.services.common.MapperUtils;
 import com.scm.services.config.JwtAuthenticationEntryPoint;
+import com.scm.services.dao.DataSoureConfigDAO;
 import com.scm.services.dao.StudentDAO;
 import com.scm.services.dao.UserDAO;
 import com.scm.services.dao.entity.Admission;
+
+import com.scm.services.dao.entity.Datasourceconfig;
 import com.scm.services.dao.entity.User;
 import com.scm.services.dto.JwtUser;
 import com.scm.services.serviceinf.UserService;
 @Repository
-public class UserDAOImpl  extends BaseDAOImpl implements UserDAO{
+public class DataSoureConfigDAOImpl  extends BaseDAOImpl implements DataSoureConfigDAO{
 
 	@Autowired
 	private MapperUtils mapper;
-	private final static Logger LOGGER = Logger.getLogger(UserDAOImpl.class);
+	private final static Logger LOGGER = Logger.getLogger(DataSoureConfigDAOImpl.class);
 	
-	public UserDAOImpl() {
+	public DataSoureConfigDAOImpl() {
 		
 	}
 
 	@Override
-	public UserDetails loadUserByUsername(String username)throws UsernameNotFoundException {
-		LOGGER.info("result from loaduser");
-		LOGGER.info(username);
-		Query query = getEM().createNamedQuery("User.findOne");
-		query.setParameter("username", username);
+	public Datasourceconfig getDatasourceByName(String name) {
+		LOGGER.info("result from Datasource");
+		LOGGER.info(name);
+		//masterEntityManager
+		Query query = getEM().createNamedQuery("Datasourceconfig.findOne");
+			query.setParameter("name", name);
 		
 		
 		try {
-			User user = (User) query.getSingleResult();
-			LOGGER.info("result from db");
-			LOGGER.info(user);
-			JwtUser userDetail = mapper.map(user,JwtUser.class);
-			 return userDetail;
+			Datasourceconfig config =  (Datasourceconfig) query.getSingleResult();
+			return config;
 		}catch(NoResultException err) {
-			  throw new UsernameNotFoundException(String.format("No user found with username '%s'.", username));
-        
-		//return null;	
+			 
+		return null;	
 		}
 		
+	}
+
+	@Override
+	public List<Datasourceconfig> getAllDataSource() {
+		// TODO Auto-generated method stub
 		
-		
-		
+		List<Datasourceconfig> configs=getEM().createNamedQuery("Datasourceconfig.findAll").getResultList();
+		return configs;
 	}
 }

@@ -14,6 +14,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bulls.scm.common.vo.StudentVO;
@@ -22,6 +23,7 @@ import com.scm.services.serviceinf.StudentService;
 
 @RestController
 @RequestMapping("/student")
+
 public class StudentController {
 	
 	private final static Logger LOGGER = Logger.getLogger(StudentController.class);
@@ -34,6 +36,22 @@ public class StudentController {
 		return new ResponseEntity<StudentVO>(studentService.saveStudent(studentVO),HttpStatus.OK);
 	}
 	
+	@RequestMapping(value="/getStudentForm", method = RequestMethod.PUT)
+	public ResponseEntity<StudentVO> getStudent(@RequestBody StudentVO studentVO) {
+		
+		
+		LOGGER.info("rest controler.."+studentVO.getAdmissionNo());
+		StudentVO response=studentService.getStudentById(studentVO.getAdmissionNo());
+		LOGGER.info("rest controler from be.."+response);
+		if(response!=null) {
+			return new ResponseEntity<StudentVO>(response,HttpStatus.OK);
+		}else {
+			
+			LOGGER.info("rest controler null..");
+			return new ResponseEntity(null,HttpStatus.OK);
+		}
+		
+	}
 	@RequestMapping(value="/getStudents", method = RequestMethod.GET)
 	public ResponseEntity getStudents() {
 		return new ResponseEntity(studentService.getStudents(),HttpStatus.OK);

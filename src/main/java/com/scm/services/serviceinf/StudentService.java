@@ -9,4 +9,6 @@ public interface StudentService {
 	public StudentVO saveStudent(StudentVO studentVO);
 	
 	List<StudentVO> getStudents();
+	
+	public StudentVO getStudentById(String admissionNo);
 }

@@ -24,6 +24,7 @@ import com.scm.services.serviceinf.UserService;
 
 @RestController
 @RequestMapping("/token")
+
 public class AuthenticationController {
 	private final static Logger LOGGER = Logger.getLogger(AuthenticationController.class);
 	
