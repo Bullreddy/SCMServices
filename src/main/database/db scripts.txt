@@ -63,6 +63,8 @@ insert into `user` (`id`, `username`, `password`, `email`, `contact_no`)
 values('1','admin','$2a$04$HYK2s1ChruRfIq1dhqCPN.Li12XMFFK1B7Aj6JDhM1PaPGZL674gC','user@gmail.com',12345678);
 
 ALTER TABLE classification MODIFY `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE','SCHOLARSHIP','BRANCH');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('11','Yes','Yes','SCHOLARSHIP','2018-05-09 22:57:33','2018-05-09 22:57:36');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('12','No','No','SCHOLARSHIP','2018-05-09 23:01:04','2018-05-09 23:01:09');
 
 
 CREATE TABLE certificates(id int,code varchar(100),name varchar(200),type int,FOREIGN KEY (type) REFERENCES classification(ID));
@@ -81,3 +83,8 @@ ALTER TABLE classification ADD branchid int references classification(id);
 
 SET SQL_SAFE_UPDATES = 0;
 update classification set branchid = 13 where id in (select x.id from (select id from classification where type <> 'BRANCH') as x);
+
+
+ALTER TABLE `scm`.`certificates` 
+CHANGE COLUMN `id` `id` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`id`);

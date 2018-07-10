@@ -67,7 +67,7 @@ public class ClassificationController {
 	
 	@RequestMapping(value = "/getCertificates", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<GetClassificationResponseVO> getCertificates(@RequestBody GetClassificationRequestVO requestVO,BindingResult bindingResults) {
-	//	LOGGER.debug("getCertificates operation begins--->"+requestVO.getScholarshipType());
+		LOGGER.debug("getCertificates operation begins--->"+requestVO.getScholarshipType());
 		GetClassificationResponseVO responseVO = new GetClassificationResponseVO();
 		try {
 			if(bindingResults!=null && bindingResults.hasErrors()) {
@@ -76,9 +76,10 @@ public class ClassificationController {
 				responseVO.setErrorVO(errorVO);
 			}
 		GetClassificationRequestDTO requestDTO = new GetClassificationRequestDTO();
-		//requestDTO.setScholarshipType(requestVO.getScholarshipType());
+		requestDTO.setScholarshipType(requestVO.getScholarshipType());
 		GetClassificationResponseDTO responseDTO = this.masterService.getCertificates(requestDTO);
 		responseVO = this.mapper.map(responseDTO, GetClassificationResponseVO.class);
+		LOGGER.debug("responseVO "+responseVO.getClassifications());
 		return new ResponseEntity(responseVO, HttpStatus.OK);
 		}catch(Exception exception) {
 			LOGGER.error("getClassifications operation failed due to -->",exception);
