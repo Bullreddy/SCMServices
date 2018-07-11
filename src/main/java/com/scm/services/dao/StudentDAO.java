@@ -9,5 +9,6 @@ public interface StudentDAO {
 	public StudentVO saveStudent(StudentVO studentVO);
 	
 	List<StudentVO> getStudents();
+	public StudentVO getStudentById(String number);
 
 }

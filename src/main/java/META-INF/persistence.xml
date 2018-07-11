@@ -4,6 +4,10 @@
 		<class>com.scm.services.dao.entity.Admission</class>
 		<class>com.scm.services.dao.entity.Classification</class>
 		<class>com.scm.services.dao.entity.User</class>
+<<<<<<< HEAD
 		<class>com.scm.services.dao.entity.StudentCertificate</class>
+=======
+		<class>com.scm.services.dao.entity.Datasourceconfig</class>
+>>>>>>> 896c39c5f45a385416e94f13272a37aa9a763e08
 	</persistence-unit>
 </persistence>

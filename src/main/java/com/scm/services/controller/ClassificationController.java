@@ -27,6 +27,7 @@ import com.scm.services.serviceinf.ClassificationService;
 
 @RestController
 @RequestMapping("/services/rest/classifications")
+
 public class ClassificationController {
 
 	private final static Logger LOGGER = Logger.getLogger(ClassificationController.class);
