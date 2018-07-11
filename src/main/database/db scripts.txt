@@ -101,3 +101,6 @@ ADD PRIMARY KEY (`id`);
 
 ALTER TABLE admission MODIFY scholarship int;
 ALTER TABLE admission add foreign key (scholarship) References Classification(id);
+
+
+ALTER TABLE admission ADD category varchar(50);

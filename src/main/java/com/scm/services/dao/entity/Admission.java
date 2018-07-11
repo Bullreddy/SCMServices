@@ -4,6 +4,7 @@ import java.io.Serializable;
 import javax.persistence.*;
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 
 /**
@@ -109,6 +110,14 @@ public class Admission implements Serializable {
 	private String UID_Number;
 
 	private String unit;
+	
+	@Column(name = "category")
+	private String category;
+	
+	@OneToMany(mappedBy="studentid")
+	List<StudentCertificate> studentCertificates;
+	
+	
 
 	public Admission() {
 	}
@@ -360,5 +369,23 @@ public class Admission implements Serializable {
 	public void setType(Classification type) {
 		this.type = type;
 	}
+
+	public String getCategory() {
+		return category;
+	}
+
+	public void setCategory(String category) {
+		this.category = category;
+	}
+
+	public List<StudentCertificate> getStudentCertificates() {
+		return studentCertificates;
+	}
+
+	public void setStudentCertificates(List<StudentCertificate> studentCertificates) {
+		this.studentCertificates = studentCertificates;
+	}
+	
+	
 
 }

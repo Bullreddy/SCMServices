@@ -43,6 +43,18 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		try {
 			Admission admission =  (Admission) query.getSingleResult();
 			StudentVO studentVO = mapper.map(admission, StudentVO.class);
+			studentVO.setAcademicYearID(admission.getAcademicYearID());
+			studentVO.setTradeID(admission.getTradeID());
+			studentVO.setPhaseID(admission.getPhaseID());
+			studentVO.setTypeID(admission.getTypeID());
+			List<String> certificateIds = new ArrayList();
+			if(admission.getStudentCertificates() !=null && admission.getStudentCertificates().size() > 0) {
+				
+				admission.getStudentCertificates().forEach( studentCertificate ->{
+					certificateIds.add(String.valueOf(studentCertificate.getCertificateid()));
+				});
+			}
+			studentVO.setCertificateIds(certificateIds);
 			return studentVO;
 			//return admission;
 			
