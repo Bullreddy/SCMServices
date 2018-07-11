@@ -12,18 +12,11 @@ import com.scm.services.serviceinf.StudentService;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-	
 	@Autowired
 	private StudentDAO studentDao;
 	
 	public StudentServiceImpl() {
 		
-	}
-
-	@Override
-	public StudentVO getStudentById(String string) {
-		
-		return studentDao.getStudentById(string);
 	}
 
 	@Override

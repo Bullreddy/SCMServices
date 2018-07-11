@@ -11,10 +11,7 @@ import java.util.Date;
  * 
  */
 @Entity
-@NamedQueries({
-@NamedQuery(name="Admission.findAll", query="SELECT a FROM Admission a"),
-@NamedQuery(name="Admission.findOne", query="SELECT a FROM Admission a WHERE a.admissionNo=:number")
-})
+@NamedQuery(name="Admission.findAll", query="SELECT a FROM Admission a")
 public class Admission implements Serializable {
 	private static final long serialVersionUID = 1L;
 
