@@ -62,7 +62,7 @@ CREATE TABLE IF NOT EXISTS `user`( `id` INT(10) NOT NULL, `username` VARCHAR(100
 insert into `user` (`id`, `username`, `password`, `email`, `contact_no`) 
 values('1','admin','$2a$04$HYK2s1ChruRfIq1dhqCPN.Li12XMFFK1B7Aj6JDhM1PaPGZL674gC','user@gmail.com',12345678);
 
-<<<<<<< HEAD
+
 
 USE SCM;
 CREATE TABLE IF NOT EXISTS `DATASOURCECONFIG`( `id` INT(10) NOT NULL, `name` VARCHAR(100) NOT NULL, 
@@ -70,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `DATASOURCECONFIG`( `id` INT(10) NOT NULL, `name` VAR
 `initialize` BOOL,PRIMARY KEY (`id`) ); 
 
 INSERT INTO `DATASOURCECONFIG` VALUES (1, 'SCMDB', 'root', 'Hema@123', 'jdbc:mysql://localhost:3306/scm1','com.mysql.jdbc.Driver', true);
-=======
+
 ALTER TABLE classification MODIFY `type` ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE','SCHOLARSHIP','BRANCH');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('11','Yes','Yes','SCHOLARSHIP','2018-05-09 22:57:33','2018-05-09 22:57:36');
 insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('12','No','No','SCHOLARSHIP','2018-05-09 23:01:04','2018-05-09 23:01:09');
@@ -101,4 +101,3 @@ ADD PRIMARY KEY (`id`);
 
 ALTER TABLE admission MODIFY scholarship int;
 ALTER TABLE admission add foreign key (scholarship) References Classification(id);
->>>>>>> ebe452b2a04c1f015d3126fdbd0d3ae9735b9aba
