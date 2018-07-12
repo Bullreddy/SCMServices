@@ -95,7 +95,6 @@ update classification set branchid = 13 where id in (select x.id from (select id
 
 
 ALTER TABLE `scm`.`certificates` 
-CHANGE COLUMN `id` `id` INT(11) NOT NULL ,
 ADD PRIMARY KEY (`id`);
 
 
@@ -104,3 +103,12 @@ ALTER TABLE admission add foreign key (scholarship) References Classification(id
 
 
 ALTER TABLE admission ADD category varchar(50);
+
+
+create table student_certificates(id int not null,studentid int,certificateid int, foreign key  (studentid) references admission(id) ON DELETE SET NULL
+    ON UPDATE CASCADE,foreign key (certificateid) references certificates(id) ON DELETE SET NULL
+    ON UPDATE CASCADE);
+    
+    ALTER TABLE `scm`.`certificates` 
+CHANGE COLUMN `id` `id` INT(11) NOT NULL ,
+ADD PRIMARY KEY (`id`);
