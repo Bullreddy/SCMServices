@@ -5,6 +5,7 @@
 		<class>com.scm.services.dao.entity.Classification</class>
 		<class>com.scm.services.dao.entity.User</class>
 		<class>com.scm.services.dao.entity.StudentCertificate</class>
+		<class>com.scm.services.dao.entity.Certificate</class>
 		<class>com.scm.services.dao.entity.Datasourceconfig</class>
 	</persistence-unit>
 </persistence>
