@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.NoResultException;
 import javax.persistence.Query;
+import javax.persistence.StoredProcedureQuery;
 
 import org.apache.log4j.Logger;
 
@@ -90,7 +91,35 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		studentVO = mapper.map(admission, StudentVO.class);
 		return studentVO;
 	}
-
+	@Override
+	public List<StudentVO> getStudentByFilter(String phase,String trade,String year) {
+		List<StudentVO> studentVOList = new ArrayList<StudentVO>();
+		
+		StoredProcedureQuery  query = getEM().createNamedStoredProcedureQuery("getstudentsByFilter");
+	
+		query.setParameter("phase", Integer.parseInt(phase));
+		query.setParameter("trade", Integer.parseInt(trade));
+		query.setParameter("years", Integer.parseInt(year));
+		//query.execute();
+		List<Admission> admissions = (List<Admission>) query.getResultList();
+		
+		
+		
+		LOGGER.info(admissions);
+		
+		for(Admission admission:admissions) {
+			StudentVO responseVO = mapper.map(admission, StudentVO.class); 
+			responseVO.setAcademicYearID(admission.getAcademicYearID());
+			responseVO.setCasteID(admission.getCaste());
+			responseVO.setPhaseID(admission.getPhaseID());
+			responseVO.setTradeID(admission.getTradeID());
+			responseVO.setTypeID(admission.getTypeID());
+			studentVOList.add(responseVO);
+		}
+		
+		return studentVOList;
+	}
+	
 	private void saveCertificates(Admission admission, StudentVO studentVO) {
 		List<String> certificatesIDs = new ArrayList<>();
 		if(studentVO.getCertificateIds() !=null) {

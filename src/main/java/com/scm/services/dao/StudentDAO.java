@@ -10,5 +10,6 @@ public interface StudentDAO {
 	
 	List<StudentVO> getStudents();
 	public StudentVO getStudentById(String number);
+	public List<StudentVO> getStudentByFilter(String phase,String trade,String year);
 
 }

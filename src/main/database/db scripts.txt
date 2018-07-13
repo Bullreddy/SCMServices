@@ -112,3 +112,53 @@ create table student_certificates(id int not null,studentid int,certificateid in
     ALTER TABLE `scm`.`certificates` 
 CHANGE COLUMN `id` `id` INT(11) NOT NULL ,
 ADD PRIMARY KEY (`id`);
+
+
+DROP PROCEDURE IF EXISTS scm.getstudents;
+CREATE PROCEDURE scm.`getstudents`(in phase int,in trade int,in years int)
+BEGIN
+   SELECT a.id ,
+        a.UID_Number ,
+        a.phase ,
+        a.academic_year ,
+        a.admission_date ,
+        a.admission_no ,
+        a.alternate_mobile_no,
+        a.caste ,
+        a.category ,
+        a.dob ,
+        a.dual_mode,
+        a.email ,
+        a.father_name ,
+        a.gender ,
+        a.highest_qualification ,
+        a.identification_marks ,
+        a.mobile_no ,
+        a.mother_name ,
+        a.name ,
+        a.photo_sbmtd ,
+        a.present_address ,
+        a.registration_no ,
+        a.scholarship ,
+        a.shift ,
+        a.trade ,
+        a.type ,
+        a.unit   FROM admission a WHERE a.phase LIKE 
+    CASE WHEN phase = 0 THEN 
+   '%'
+     ELSE 
+     phase
+     END
+    AND a.trade LIKE
+      CASE WHEN trade = 0 THEN 
+     '%'
+     ELSE 
+     trade
+     END
+     AND a.academic_year LIKE
+       CASE WHEN years = 0 THEN 
+      '%'
+     ELSE 
+     years
+     END;
+   END;

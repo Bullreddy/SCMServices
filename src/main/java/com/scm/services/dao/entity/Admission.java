@@ -16,6 +16,16 @@ import java.util.List;
 @NamedQuery(name="Admission.findAll", query="SELECT a FROM Admission a"),
 @NamedQuery(name="Admission.findOne", query="SELECT a FROM Admission a WHERE a.admissionNo=:number")
 })
+@NamedStoredProcedureQuery(
+		name = "getstudentsByFilter", 
+		procedureName = "getstudents", 
+		resultClasses = Admission.class, 
+		parameters = {
+				@StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class,name="phase"),
+				@StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class,name="trade"),
+				@StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class,name="years")
+		}
+	)
 public class Admission implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -114,7 +124,8 @@ public class Admission implements Serializable {
 	@Column(name = "category")
 	private String category;
 	
-	@OneToMany(mappedBy="studentid")
+	@OneToMany
+	//(mappedBy="studentid")
 	List<StudentCertificate> studentCertificates;
 	
 	

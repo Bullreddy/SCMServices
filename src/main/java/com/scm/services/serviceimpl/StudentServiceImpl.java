@@ -35,5 +35,8 @@ public class StudentServiceImpl implements StudentService {
 	public List<StudentVO> getStudents() {
 		return studentDao.getStudents();
 	}
-
+	@Override
+	public List<StudentVO> getStudentByFilter(String phase,String trade,String year) {
+		return studentDao.getStudentByFilter(phase,trade,year);
+	}
 }

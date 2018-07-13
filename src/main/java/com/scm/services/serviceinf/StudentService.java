@@ -11,4 +11,7 @@ public interface StudentService {
 	List<StudentVO> getStudents();
 	
 	public StudentVO getStudentById(String admissionNo);
+	
+	public List<StudentVO>  getStudentByFilter(String phase,String trade,String year);
+	
 }
