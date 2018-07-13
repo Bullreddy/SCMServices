@@ -1,6 +1,7 @@
 package com.scm.services.controller;
 
 import java.io.IOException;
+import java.util.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,6 +15,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bulls.scm.common.vo.StudentVO;
@@ -35,7 +37,19 @@ public class StudentController {
 		LOGGER.debug("vo "+studentVO.getCertificateIds());
 		return new ResponseEntity<StudentVO>(studentService.saveStudent(studentVO),HttpStatus.OK);
 	}
-	
+	@RequestMapping(value="/applyfilter", method = RequestMethod.GET)
+	public ResponseEntity applyFilter(@RequestParam String phase,
+			@RequestParam String trade,@RequestParam String year) {
+		LOGGER.info("rest controlerddd..");
+		LOGGER.info(phase);
+		LOGGER.info(trade);
+		LOGGER.info(year);
+		
+		List<StudentVO> response=studentService.getStudentByFilter(phase,trade,year);
+		
+		LOGGER.info(response);
+		return new ResponseEntity(response,HttpStatus.OK);
+	}
 	@RequestMapping(value="/getStudentForm", method = RequestMethod.PUT)
 	public ResponseEntity<StudentVO> getStudent(@RequestBody StudentVO studentVO) {
 		
