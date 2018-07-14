@@ -1,11 +1,14 @@
 package com.scm.services.controller;
 
 import java.io.IOException;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.websocket.server.PathParam;
 
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -18,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.bulls.scm.common.vo.StudentVO;
 import com.bulls.scm.vo.StudentRequestVO;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.scm.services.common.ExportUtil;
 import com.scm.services.serviceinf.StudentService;
 
@@ -60,12 +64,9 @@ public class StudentController {
 	
 	@RequestMapping(value="/exportStudents",produces="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 	public void exportStudents(@RequestBody StudentRequestVO studentRequestVO, HttpServletResponse response) {
-	//	ExportUtil.exporttoXLS(studentService.getStudents(),response);
-		LOGGER.info("studentRequestVO" +studentRequestVO.getStudents()+" branch "+studentRequestVO.getBranchID()+" phase "+studentRequestVO.getPhaseID());
 		try {
 			response.setHeader("Content-Disposition", "attachment; filename=\"testExcel.xls\"");
 			response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
-		   // response.setContentType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
 		    
 			ExportUtil.exporttoXLS(studentService.getStudents(studentRequestVO),response).write(response.getOutputStream());
 			response.flushBuffer();
