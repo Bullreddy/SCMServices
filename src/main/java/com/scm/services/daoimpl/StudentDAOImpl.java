@@ -96,6 +96,8 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 			sb.append(" and a.academicYearID = "+Integer.parseInt(studentRequestVO.getAcademicYearID()));
 		if(studentRequestVO.getTradeID() != null)
 			sb.append(" and a.tradeID = "+Integer.parseInt(studentRequestVO.getTradeID()));
+		if(studentRequestVO.getStudents() != null)
+			addStudentFilter(sb,studentRequestVO);
 		Query  query = getEM().createQuery(sb.toString());
 		query.setParameter("branchID", Long.valueOf(studentRequestVO.getBranchID()));
 	
@@ -107,6 +109,19 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		return convertor.convertAdmissionListTOStudentVOList(admissions);
 	}
 	
+	private void addStudentFilter(StringBuilder sb, StudentRequestVO studentRequestVO) {
+		StringBuilder studentIdBuilder = new StringBuilder();
+			if(studentRequestVO.getStudents() != null && !studentRequestVO.getStudents().isEmpty()) {
+				studentRequestVO.getStudents().forEach(studentId ->{
+					if(studentIdBuilder.length()>0)
+						studentIdBuilder.append(",");
+						studentIdBuilder.append(studentId);
+				});
+			}
+			if(studentIdBuilder.length()>0) {
+				sb.append(" and id in ("+studentIdBuilder.toString()+")");
+			}
+	}
 	private void saveCertificates(Admission admission, StudentVO studentVO) {
 		List<String> certificatesIDs = new ArrayList<>();
 		if(studentVO.getCertificateIds() !=null) {

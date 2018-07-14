@@ -59,14 +59,15 @@ public class StudentController {
 	}
 	
 	@RequestMapping(value="/exportStudents",produces="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
-	public void exportStudents(HttpServletRequest request, HttpServletResponse response) {
-		ExportUtil.exporttoXLS(studentService.getStudents(),response);
+	public void exportStudents(@RequestBody StudentRequestVO studentRequestVO, HttpServletResponse response) {
+	//	ExportUtil.exporttoXLS(studentService.getStudents(),response);
+		LOGGER.info("studentRequestVO" +studentRequestVO.getStudents()+" branch "+studentRequestVO.getBranchID()+" phase "+studentRequestVO.getPhaseID());
 		try {
 			response.setHeader("Content-Disposition", "attachment; filename=\"testExcel.xls\"");
 			response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet");
 		   // response.setContentType("application/vnd.openxmlformats-officedocument.wordprocessingml.document");
 		    
-			ExportUtil.exporttoXLS(studentService.getStudents(),response).write(response.getOutputStream());
+			ExportUtil.exporttoXLS(studentService.getStudents(studentRequestVO),response).write(response.getOutputStream());
 			response.flushBuffer();
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
