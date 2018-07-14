@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.bulls.scm.common.vo.StudentVO;
+import com.bulls.scm.vo.StudentRequestVO;
 import com.scm.services.common.ExportUtil;
 import com.scm.services.serviceinf.StudentService;
 
@@ -52,9 +53,9 @@ public class StudentController {
 		}
 		
 	}
-	@RequestMapping(value="/getStudents", method = RequestMethod.GET)
-	public ResponseEntity getStudents() {
-		return new ResponseEntity(studentService.getStudents(),HttpStatus.OK);
+	@RequestMapping(value="/getStudents", method = RequestMethod.POST)
+	public ResponseEntity getStudents(@RequestBody StudentRequestVO studentRequestVO) {
+		return new ResponseEntity(studentService.getStudents(studentRequestVO),HttpStatus.OK);
 	}
 	
 	@RequestMapping(value="/exportStudents",produces="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")

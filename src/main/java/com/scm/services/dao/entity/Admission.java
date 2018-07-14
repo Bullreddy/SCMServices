@@ -14,18 +14,10 @@ import java.util.List;
 @Entity
 @NamedQueries({
 @NamedQuery(name="Admission.findAll", query="SELECT a FROM Admission a"),
-@NamedQuery(name="Admission.findOne", query="SELECT a FROM Admission a WHERE a.admissionNo=:number")
+@NamedQuery(name="Admission.findByAdmissionNO", query="SELECT a FROM Admission a WHERE a.admissionNo=:admissionNO"),
+@NamedQuery(name="getStudentbyParams", query="SELECT a FROM Admission a WHERE a.academicYear.branchID =:branchID")
 })
-@NamedStoredProcedureQuery(
-		name = "getstudentsByFilter", 
-		procedureName = "getstudents", 
-		resultClasses = Admission.class, 
-		parameters = {
-				@StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class,name="phase"),
-				@StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class,name="trade"),
-				@StoredProcedureParameter(mode = ParameterMode.IN, type = Integer.class,name="years")
-		}
-	)
+
 public class Admission implements Serializable {
 	private static final long serialVersionUID = 1L;
 
