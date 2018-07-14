@@ -26,10 +26,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
  */
 @Configuration
 @EnableAutoConfiguration
-@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class,SecurityAutoConfiguration.class })
-@ComponentScan({"com.scm.services","com.scm.services.dao"})
+//@SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, HibernateJpaAutoConfiguration.class,SecurityAutoConfiguration.class })
+@ComponentScan({"com.scm.services","com.scm.services.dao","com.scm.services.convertor"})
 @EntityScan(basePackages="com.scm.services.dao.entity")
-@EnableConfigurationProperties(MultiTenantProperties.class)
+//@EnableConfigurationProperties(MultiTenantProperties.class)
 
 public class App extends SpringBootServletInitializer
 {
@@ -56,10 +56,10 @@ public class App extends SpringBootServletInitializer
     	            registry.addMapping("/**");
     	        }
     		
-    		@Override
+/*    		@Override
     		public void addInterceptors(InterceptorRegistry registry) {
     			registry.addInterceptor(new MultiTenantInterceptor());
-    		}
+    		}*/
     		
 		};
     }

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
 
 import com.scm.services.controller.MultiTenantProperties;
 
-@Component
+//@Component
 public class DataSourceConfig {
 
 	@Autowired

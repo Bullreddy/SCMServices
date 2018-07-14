@@ -34,12 +34,12 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.scm.services.config.DataSourceConfig;
 
-@Configuration
+/*@Configuration
 @EnableTransactionManagement
 @EnableJpaRepositories(
         entityManagerFactoryRef = "entityManagerFactory", 
         basePackages = { "com.scm.services.dao.impl" })
-
+*/
 public class MultiTenantJpaConfiguration {
 
 	
