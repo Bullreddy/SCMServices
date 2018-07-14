@@ -116,8 +116,7 @@ public class Admission implements Serializable {
 	@Column(name = "category")
 	private String category;
 	
-	@OneToMany
-	//(mappedBy="studentid")
+	@OneToMany(mappedBy="studentid")
 	List<StudentCertificate> studentCertificates;
 	
 	
