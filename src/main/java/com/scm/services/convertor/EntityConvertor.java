@@ -20,10 +20,12 @@ public class EntityConvertor {
 	  
 	public StudentVO convertAdmissionTOStudentVO(Admission admission) {
 		StudentVO studentVO = mapper.map(admission, StudentVO.class);
+		studentVO.setPhotoSubmitted(admission.getPhotoSbmtd()!=null && admission.getPhotoSbmtd().equals("Y"));
 		studentVO.setAcademicYearID(admission.getAcademicYearID());
 		studentVO.setTradeID(admission.getTradeID());
 		studentVO.setPhaseID(admission.getPhaseID());
 		studentVO.setTypeID(admission.getTypeID());
+		studentVO.setCasteID(admission.getCaste());
 		List<String> certificateIds = new ArrayList();
 		if(admission.getStudentCertificates() !=null && admission.getStudentCertificates().size() > 0) {
 			
@@ -39,13 +41,7 @@ public class EntityConvertor {
 		List<StudentVO> studentVOList = new ArrayList<StudentVO>();
 		LOGGER.info("mapper "+mapper);
 		for(Admission admission:admissions) {
-			StudentVO responseVO = mapper.map(admission, StudentVO.class); 
-			responseVO.setAcademicYearID(admission.getAcademicYearID());
-			responseVO.setCasteID(admission.getCaste());
-			responseVO.setPhaseID(admission.getPhaseID());
-			responseVO.setTradeID(admission.getTradeID());
-			responseVO.setTypeID(admission.getTypeID());
-			studentVOList.add(responseVO);
+			studentVOList.add(convertAdmissionTOStudentVO(admission));
 		}
 		return studentVOList;
 	}

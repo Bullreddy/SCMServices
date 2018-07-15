@@ -57,9 +57,8 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 	@Override
 	public StudentVO saveStudent(StudentVO studentVO) {
 		LOGGER.info("save student...........");
-		LOGGER.info(studentVO.getCasteID());
-		LOGGER.info(studentVO.getPhaseID());
 		Admission admission = mapper.map(studentVO, Admission.class);
+		admission.setPhotoSbmtd(studentVO.isphotoSubmitted()?"Y":"N");
 		admission.setAcademicYearID(studentVO.getAcademicYearID());
 		admission.setCaste(studentVO.getCasteID());
 		admission.setPhaseID(studentVO.getPhaseID());
@@ -78,7 +77,7 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		
 		saveCertificates(admission,studentVO);
 
-		studentVO = mapper.map(admission, StudentVO.class);
+		studentVO = convertor.convertAdmissionTOStudentVO(admission);
 		return studentVO;
 	}
 	@Override
