@@ -16,7 +16,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.bulls.scm.common.vo.StudentVO;
+import com.bulls.scm.vo.StudentRequestVO;
 import com.scm.services.common.MapperUtils;
+import com.scm.services.convertor.EntityConvertor;
 import com.scm.services.dao.StudentDAO;
 import com.scm.services.dao.entity.Admission;
 
@@ -30,6 +32,9 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 
 	private final static Logger LOGGER = Logger.getLogger(StudentDAOImpl.class);
 	
+	@Autowired
+	private EntityConvertor convertor;
+	
 	public StudentDAOImpl() {
 	}
 	@Override
@@ -37,27 +42,12 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		LOGGER.info("result from student...");
 		
 		//masterEntityManager
-		Query query = getEM().createNamedQuery("Admission.findOne");
-			query.setParameter("number", number);
-		
+		Query query = getEM().createNamedQuery("Admission.findByAdmissionNO");
+			query.setParameter("admissionNO", number);
 		
 		try {
 			Admission admission =  (Admission) query.getSingleResult();
-			StudentVO studentVO = mapper.map(admission, StudentVO.class);
-			studentVO.setAcademicYearID(admission.getAcademicYearID());
-			studentVO.setTradeID(admission.getTradeID());
-			studentVO.setPhaseID(admission.getPhaseID());
-			studentVO.setTypeID(admission.getTypeID());
-			List<String> certificateIds = new ArrayList();
-			if(admission.getStudentCertificates() !=null && admission.getStudentCertificates().size() > 0) {
-				
-				admission.getStudentCertificates().forEach( studentCertificate ->{
-					certificateIds.add(String.valueOf(studentCertificate.getCertificateid()));
-				});
-			}
-			studentVO.setCertificateIds(certificateIds);
-			return studentVO;
-			//return admission;
+			return convertor.convertAdmissionTOStudentVO(admission);
 			
 		}catch(NoResultException err) {
 			 
@@ -67,9 +57,8 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 	@Override
 	public StudentVO saveStudent(StudentVO studentVO) {
 		LOGGER.info("save student...........");
-		LOGGER.info(studentVO.getCasteID());
-		LOGGER.info(studentVO.getPhaseID());
 		Admission admission = mapper.map(studentVO, Admission.class);
+		admission.setPhotoSbmtd(studentVO.isphotoSubmitted()?"Y":"N");
 		admission.setAcademicYearID(studentVO.getAcademicYearID());
 		admission.setCaste(studentVO.getCasteID());
 		admission.setPhaseID(studentVO.getPhaseID());
@@ -88,38 +77,50 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		
 		saveCertificates(admission,studentVO);
 
-		studentVO = mapper.map(admission, StudentVO.class);
+		studentVO = convertor.convertAdmissionTOStudentVO(admission);
 		return studentVO;
 	}
 	@Override
-	public List<StudentVO> getStudentByFilter(String phase,String trade,String year) {
+	public List<StudentVO> getStudents(StudentRequestVO studentRequestVO) {
 		List<StudentVO> studentVOList = new ArrayList<StudentVO>();
 		
-		StoredProcedureQuery  query = getEM().createNamedStoredProcedureQuery("getstudentsByFilter");
+		String s = getEM().createNamedQuery("getStudentbyParams")
+			    .unwrap(org.hibernate.Query.class)
+			    .getQueryString();
+		StringBuilder sb = new StringBuilder(s);
+		
+		if(studentRequestVO.getPhaseID() != null)
+			sb.append(" and a.phaseID = "+Integer.parseInt(studentRequestVO.getPhaseID()));
+		if(studentRequestVO.getAcademicYearID() != null)
+			sb.append(" and a.academicYearID = "+Integer.parseInt(studentRequestVO.getAcademicYearID()));
+		if(studentRequestVO.getTradeID() != null)
+			sb.append(" and a.tradeID = "+Integer.parseInt(studentRequestVO.getTradeID()));
+		if(studentRequestVO.getStudents() != null)
+			addStudentFilter(sb,studentRequestVO);
+		Query  query = getEM().createQuery(sb.toString());
+		query.setParameter("branchID", Long.valueOf(studentRequestVO.getBranchID()));
 	
-		query.setParameter("phase", Integer.parseInt(phase));
-		query.setParameter("trade", Integer.parseInt(trade));
-		query.setParameter("years", Integer.parseInt(year));
-		//query.execute();
 		List<Admission> admissions = (List<Admission>) query.getResultList();
 		
-		
-		
 		LOGGER.info(admissions);
-		
-		for(Admission admission:admissions) {
-			StudentVO responseVO = mapper.map(admission, StudentVO.class); 
-			responseVO.setAcademicYearID(admission.getAcademicYearID());
-			responseVO.setCasteID(admission.getCaste());
-			responseVO.setPhaseID(admission.getPhaseID());
-			responseVO.setTradeID(admission.getTradeID());
-			responseVO.setTypeID(admission.getTypeID());
-			studentVOList.add(responseVO);
-		}
-		
-		return studentVOList;
+		if(null == admissions)
+			return null;
+		return convertor.convertAdmissionListTOStudentVOList(admissions);
 	}
 	
+	private void addStudentFilter(StringBuilder sb, StudentRequestVO studentRequestVO) {
+		StringBuilder studentIdBuilder = new StringBuilder();
+			if(studentRequestVO.getStudents() != null && !studentRequestVO.getStudents().isEmpty()) {
+				studentRequestVO.getStudents().forEach(studentId ->{
+					if(studentIdBuilder.length()>0)
+						studentIdBuilder.append(",");
+						studentIdBuilder.append(studentId);
+				});
+			}
+			if(studentIdBuilder.length()>0) {
+				sb.append(" and id in ("+studentIdBuilder.toString()+")");
+			}
+	}
 	private void saveCertificates(Admission admission, StudentVO studentVO) {
 		List<String> certificatesIDs = new ArrayList<>();
 		if(studentVO.getCertificateIds() !=null) {

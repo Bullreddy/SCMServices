@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.bulls.scm.common.vo.StudentVO;
+import com.bulls.scm.vo.StudentRequestVO;
 import com.scm.services.dao.StudentDAO;
 import com.scm.services.serviceinf.StudentService;
 
@@ -36,7 +37,7 @@ public class StudentServiceImpl implements StudentService {
 		return studentDao.getStudents();
 	}
 	@Override
-	public List<StudentVO> getStudentByFilter(String phase,String trade,String year) {
-		return studentDao.getStudentByFilter(phase,trade,year);
+	public List<StudentVO> getStudents(StudentRequestVO studentRequestVO) {
+		return studentDao.getStudents(studentRequestVO);
 	}
 }

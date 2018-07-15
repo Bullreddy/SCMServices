@@ -47,7 +47,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
     	response.setHeader("Access-Control-Max-Age", "3600");
         response.setHeader("Access-Control-Allow-Credentials", "true");
     	response.setHeader("Access-Control-Allow-Headers",
-    			"x-requested-with, authorization, Content-Type, Authorization, credential, X-XSRF-TOKEN");
+    			"x-requested-with, authorization, Content-Type, responseType, Authorization, credential, X-XSRF-TOKEN");
 
         logger.warn("filter cxaling--?");
         String username = null;

@@ -2858,3 +2858,244 @@
 2018-07-14 01:54:32 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7733ce62
 2018-07-14 01:54:32 DEBUG ClassificationController:46 - getClassifications operation begins--->13
 2018-07-14 01:54:32 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:57:45 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-14 01:57:45 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-14 01:57:56 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-14 01:57:56 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-14 01:57:56 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-14 01:57:56 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:57:57 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:57:57 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:57:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@23706f9f
+2018-07-14 01:57:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:57:57 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:57:57 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:57:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@23706f9f
+2018-07-14 01:57:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:57:57 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:57:57 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:57:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@162e1033
+2018-07-14 01:57:57 DEBUG ClassificationController:46 - getClassifications operation begins--->null
+2018-07-14 01:57:57 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:58:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:58:15 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:58:15 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:58:15 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:58:15 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:58:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@9e6084a
+2018-07-14 01:58:15 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 01:58:15 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:58:15 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@21ff2018
+2018-07-14 01:58:15 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:59:11 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:59:11 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:59:11 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:59:11 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7031fe6d
+2018-07-14 01:59:11 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 01:59:11 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:59:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:59:34 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:59:34 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:59:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@44f5bb69
+2018-07-14 01:59:34 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 01:59:34 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:59:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:59:35 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:59:35 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:59:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6ab64798
+2018-07-14 01:59:35 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 01:59:35 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:59:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:59:35 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:59:35 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:59:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7c5cc4de
+2018-07-14 01:59:42 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:59:42 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:59:42 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:59:42 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2d07a106
+2018-07-14 01:59:42 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 01:59:42 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 01:59:45 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 01:59:45 INFO  UserDAOImpl:38 - admin
+2018-07-14 01:59:45 INFO  UserDAOImpl:45 - result from db
+2018-07-14 01:59:45 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2978a1c7
+2018-07-14 01:59:46 INFO  StudentController:57 - rest controler..
+2018-07-14 01:59:47 INFO  StudentDAOImpl:37 - result from student...
+2018-07-14 01:59:48 INFO  StudentController:59 - rest controler from be..null
+2018-07-14 01:59:48 INFO  StudentController:64 - rest controler null..
+2018-07-14 02:03:27 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:03:28 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:03:28 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:03:28 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:03:28 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:03:28 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:03:28 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:03:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@20bb2a78
+2018-07-14 02:03:28 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:03:28 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:03:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2b6b8c83
+2018-07-14 02:03:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4d99b0cd
+2018-07-14 02:03:29 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:03:29 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:03:29 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:03:29 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:03:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:03:33 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:03:33 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:03:33 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6f4eb836
+2018-07-14 02:03:33 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:03:33 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:03:36 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:03:36 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:03:36 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:03:36 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2760fc4a
+2018-07-14 02:03:36 INFO  StudentController:57 - rest controler..
+2018-07-14 02:03:36 INFO  StudentDAOImpl:37 - result from student...
+2018-07-14 02:03:36 INFO  StudentController:59 - rest controler from be..null
+2018-07-14 02:03:36 INFO  StudentController:64 - rest controler null..
+2018-07-14 02:04:26 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:26 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:26 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:26 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1bed40af
+2018-07-14 02:04:26 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:04:26 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:04:28 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:28 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:28 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5321dee
+2018-07-14 02:04:28 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:04:28 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:04:28 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:28 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:28 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:28 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1ae60e45
+2018-07-14 02:04:30 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:30 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:30 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:30 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@223db74a
+2018-07-14 02:04:30 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:04:30 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:04:31 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:31 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:31 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:31 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:31 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:31 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@60a2251c
+2018-07-14 02:04:31 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:31 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@60c29e90
+2018-07-14 02:04:31 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:04:31 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:04:35 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:35 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:35 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:35 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@566f1112
+2018-07-14 02:04:35 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-14 02:04:35 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-14 02:04:40 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:40 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:40 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:40 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4aa8a3d0
+2018-07-14 02:04:40 INFO  StudentController:57 - rest controler..
+2018-07-14 02:04:40 INFO  StudentDAOImpl:37 - result from student...
+2018-07-14 02:04:40 INFO  StudentController:59 - rest controler from be..null
+2018-07-14 02:04:40 INFO  StudentController:64 - rest controler null..
+2018-07-14 02:04:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-14 02:04:57 INFO  UserDAOImpl:38 - admin
+2018-07-14 02:04:57 INFO  UserDAOImpl:45 - result from db
+2018-07-14 02:04:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@296d76dc
+2018-07-14 02:04:57 INFO  StudentController:57 - rest controler..
+2018-07-14 02:04:57 INFO  StudentDAOImpl:37 - result from student...
+2018-07-14 02:04:58 INFO  StudentController:59 - rest controler from be..null
+2018-07-14 02:04:58 INFO  StudentController:64 - rest controler null..
+2018-07-15 15:43:40 INFO  MultiTenantJpaConfiguration:55 - gopi......
+2018-07-15 15:43:40 INFO  MultiTenantJpaConfiguration:56 - com.scm.services.config.DataSourceConfig@4dbd61bb
+2018-07-15 15:44:20 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-15 15:44:20 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-15 15:44:20 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-15 15:44:20 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:44:20 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:44:21 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:44:21 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5eae76bd
+2018-07-15 15:44:21 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:44:21 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:44:21 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:44:21 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5eae76bd
+2018-07-15 15:44:22 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:44:22 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:44:22 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:44:22 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@631d7499
+2018-07-15 15:44:22 DEBUG ClassificationController:46 - getClassifications operation begins--->null
+2018-07-15 15:44:22 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 15:44:47 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:44:47 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:44:47 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:44:47 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@75ef3a30
+2018-07-15 15:44:47 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-15 15:44:47 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 15:45:51 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:45:51 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:45:51 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:45:51 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5e2e177c
+2018-07-15 15:45:51 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-15 15:45:51 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 15:45:52 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:45:52 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:45:52 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:45:52 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5aadb86f
+2018-07-15 15:46:02 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:46:02 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:46:02 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:46:02 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@3a303162
+2018-07-15 15:46:02 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-15 15:46:02 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 15:53:42 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:53:42 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:53:42 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:53:42 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@1979630f
+2018-07-15 15:53:42 INFO  StudentController:57 - rest controler..1998
+2018-07-15 15:53:42 INFO  StudentDAOImpl:37 - result from student...
+2018-07-15 15:53:42 INFO  StudentController:59 - rest controler from be..com.bulls.scm.common.vo.StudentVO@36091c69
+2018-07-15 15:53:43 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:53:43 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:53:43 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:53:43 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@75a6edb0
+2018-07-15 15:53:43 DEBUG ClassificationController:71 - getCertificates operation begins--->11
+2018-07-15 15:53:43 DEBUG ClassificationDAOImpl:49 - getcertificatess operation dao layer begins
+2018-07-15 15:53:43 DEBUG ClassificationController:83 - responseVO [com.bulls.scm.vo.ClassificationVO@3132aaf9, com.bulls.scm.vo.ClassificationVO@2bd2d075, com.bulls.scm.vo.ClassificationVO@231c6855, com.bulls.scm.vo.ClassificationVO@1b29fcfa]
+2018-07-15 15:54:10 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:54:10 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:54:10 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:54:10 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4844a2b7
+2018-07-15 15:54:10 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-15 15:54:10 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 15:54:18 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:54:18 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:54:18 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:54:18 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6ff44b1f
+2018-07-15 15:54:18 INFO  StudentController:57 - rest controler..1998
+2018-07-15 15:54:18 INFO  StudentDAOImpl:37 - result from student...
+2018-07-15 15:54:18 INFO  StudentController:59 - rest controler from be..com.bulls.scm.common.vo.StudentVO@246e2b8c
+2018-07-15 15:54:18 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:54:18 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:54:18 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:54:18 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@576a7659
+2018-07-15 15:54:18 DEBUG ClassificationController:71 - getCertificates operation begins--->11
+2018-07-15 15:54:18 DEBUG ClassificationDAOImpl:49 - getcertificatess operation dao layer begins
+2018-07-15 15:54:18 DEBUG ClassificationController:83 - responseVO [com.bulls.scm.vo.ClassificationVO@19e17c7d, com.bulls.scm.vo.ClassificationVO@13389001, com.bulls.scm.vo.ClassificationVO@78cae46e, com.bulls.scm.vo.ClassificationVO@4e675a5e]
+2018-07-15 15:55:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:55:34 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:55:34 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:55:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@614c94e0
+2018-07-15 15:55:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:55:34 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:55:34 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:55:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@cc83425
+2018-07-15 15:55:34 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-15 15:55:34 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 15:55:49 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-15 15:55:49 INFO  UserDAOImpl:38 - admin
+2018-07-15 15:55:49 INFO  UserDAOImpl:45 - result from db
+2018-07-15 15:55:49 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@29c61be6
+2018-07-15 15:55:49 DEBUG ClassificationController:46 - getClassifications operation begins--->13
+2018-07-15 15:55:49 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
+2018-07-15 17:20:14 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
