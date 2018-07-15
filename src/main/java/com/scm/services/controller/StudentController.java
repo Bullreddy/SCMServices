@@ -1,18 +1,15 @@
 package com.scm.services.controller;
 
 import java.io.IOException;
-<<<<<<< HEAD
-import java.util.*;
-=======
+
 import java.util.List;
->>>>>>> dc63ef5d46dc1950ada99a42216ccbf8420ba5cb
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.websocket.server.PathParam;
 
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
@@ -45,19 +42,7 @@ public class StudentController {
 		LOGGER.debug("vo "+studentVO.getCertificateIds());
 		return new ResponseEntity<StudentVO>(studentService.saveStudent(studentVO),HttpStatus.OK);
 	}
-	@RequestMapping(value="/applyfilter", method = RequestMethod.GET)
-	public ResponseEntity applyFilter(@RequestParam String phase,
-			@RequestParam String trade,@RequestParam String year) {
-		LOGGER.info("rest controlerddd..");
-		LOGGER.info(phase);
-		LOGGER.info(trade);
-		LOGGER.info(year);
-		
-		List<StudentVO> response=studentService.getStudentByFilter(phase,trade,year);
-		
-		LOGGER.info(response);
-		return new ResponseEntity(response,HttpStatus.OK);
-	}
+
 	@RequestMapping(value="/getStudentForm", method = RequestMethod.PUT)
 	public ResponseEntity<StudentVO> getStudent(@RequestBody StudentVO studentVO) {
 		
