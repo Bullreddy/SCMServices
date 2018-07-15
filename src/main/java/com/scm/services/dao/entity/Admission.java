@@ -25,7 +25,7 @@ public class Admission implements Serializable {
 	private int academicYearID;
 	
 	@OneToOne
-	@JoinColumn(name="phase",insertable=false,updatable=false)
+	@JoinColumn(name="academic_year",insertable=false,updatable=false)
 	Classification academicYear;
 
 	@Temporal(TemporalType.DATE)
