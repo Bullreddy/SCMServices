@@ -20,6 +20,7 @@ import org.apache.poi.ss.usermodel.IndexedColors;
 import org.springframework.http.MediaType;
 
 import com.bulls.scm.common.vo.StudentVO;
+import com.sun.media.jfxmedia.logging.Logger;
 
 public class ExportUtil {
 	
@@ -76,7 +77,7 @@ public class ExportUtil {
 		students.forEach(student ->{
 			HSSFRow row = sheet.createRow(rownum);
 			row.createCell(0).setCellValue(student.getAcademicYear().getName());
-			row.createCell(1).setCellValue(student.getAdmissionNo());
+			//row.createCell(1).setCellValue();
 			row.createCell(2).setCellValue(student.getRegistrationNo());
 			row.createCell(3).setCellValue(student.getAdmissionNo());
 			
@@ -88,7 +89,8 @@ public class ExportUtil {
 			row.createCell(7).setCellValue(student.getEmail());
 			
 			row.createCell(8).setCellType(getCellTypeAndSetProperties(student.getAdmissionDate(), workBook, row.getCell(8)));
-			row.getCell(8).setCellValue(student.getDob());
+			System.out.println("welcome"+student.getDob());
+			row.getCell(8).setCellValue(student.getDob().toString());
 			
 			row.createCell(9).setCellValue(student.getGender());
 			row.createCell(10).setCellValue(student.getCaste().getName());
