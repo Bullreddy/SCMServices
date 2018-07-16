@@ -3,6 +3,8 @@ package com.scm.services.common;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -90,7 +92,10 @@ public class ExportUtil {
 			
 			row.createCell(8).setCellType(getCellTypeAndSetProperties(student.getAdmissionDate(), workBook, row.getCell(8)));
 			System.out.println("welcome"+student.getDob());
-			row.getCell(8).setCellValue(student.getDob().toString());
+			DateFormat df=new SimpleDateFormat("dd-MM-yyyy");
+			
+			String dt=df.format(student.getDob());
+			row.getCell(8).setCellValue(dt);
 			
 			row.createCell(9).setCellValue(student.getGender());
 			row.createCell(10).setCellValue(student.getCaste().getName());
