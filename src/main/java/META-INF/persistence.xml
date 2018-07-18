@@ -7,5 +7,6 @@
 		<class>com.scm.services.dao.entity.StudentCertificate</class>
 		<class>com.scm.services.dao.entity.Certificate</class>
 		<class>com.scm.services.dao.entity.Datasourceconfig</class>
+		<class>com.scm.services.dao.entity.FeeDetail</class>
 	</persistence-unit>
 </persistence>

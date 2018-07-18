@@ -3099,3 +3099,104 @@
 2018-07-15 15:55:49 DEBUG ClassificationController:46 - getClassifications operation begins--->13
 2018-07-15 15:55:49 DEBUG ClassificationDAOImpl:70 - getclassfications operation dao layer begins
 2018-07-15 17:20:14 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-18 10:13:34 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-18 10:14:25 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-18 10:14:27 DEBUG JwtAuthenticationEntryPoint:24 - Unauthorized User--->
+2018-07-18 10:31:53 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-18 10:31:53 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-18 10:31:53 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-18 10:31:53 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:31:53 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:31:53 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:31:53 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@75d20e6
+2018-07-18 10:31:53 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:31:53 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:31:53 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:31:53 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@75d20e6
+2018-07-18 10:32:22 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:32:22 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:32:22 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:32:22 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@5c710718
+2018-07-18 10:34:16 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:34:16 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:34:16 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:34:16 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@165dfb9e
+2018-07-18 10:34:18 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:34:18 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:34:18 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:34:18 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@114d9255
+2018-07-18 10:38:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:38:04 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:38:04 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:38:04 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@40397dc0
+2018-07-18 10:39:36 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-18 10:39:36 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-18 10:39:36 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-18 10:39:36 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:39:36 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:39:36 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:39:36 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@147c03b9
+2018-07-18 10:39:36 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:39:36 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:39:36 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:39:36 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@147c03b9
+2018-07-18 10:40:24 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:40:24 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:40:24 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:40:24 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@6cd59b7a
+2018-07-18 10:42:17 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:42:17 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:42:17 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:42:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@20f1bfeb
+2018-07-18 10:42:26 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:42:26 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:42:26 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:42:26 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@4057acb3
+2018-07-18 10:42:26 DEBUG FeeController:38 - vo null
+2018-07-18 10:43:19 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:43:19 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:43:19 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:43:19 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7abf8f30
+2018-07-18 10:43:19 DEBUG FeeController:38 - vo null
+2018-07-18 10:45:33 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:45:33 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:45:33 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:45:33 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@424c80df
+2018-07-18 10:45:33 DEBUG FeeController:38 - vo null
+2018-07-18 10:46:34 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-18 10:46:34 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-18 10:46:34 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-18 10:46:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:46:34 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:46:34 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:46:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2ee47050
+2018-07-18 10:46:34 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:46:34 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:46:34 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:46:34 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2ee47050
+2018-07-18 10:46:57 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:46:57 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:46:57 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:46:57 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@524f7894
+2018-07-18 10:47:01 DEBUG FeeController:38 - vo null
+2018-07-18 10:47:04 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:47:04 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:47:04 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:47:04 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@2006d655
+2018-07-18 10:47:06 DEBUG FeeController:38 - vo null
+2018-07-18 10:50:16 DEBUG AuthenticationController:41 - Authentication controll calaing  begins--->
+2018-07-18 10:50:16 DEBUG AuthenticationController:43 - loginUser.getUserName()-->admin
+2018-07-18 10:50:16 DEBUG AuthenticationController:44 - loginUser.getUserName()-->welcome
+2018-07-18 10:50:17 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:50:17 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:50:17 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:50:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@13067a8d
+2018-07-18 10:50:17 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:50:17 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:50:17 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:50:17 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@13067a8d
+2018-07-18 10:50:39 INFO  UserDAOImpl:37 - result from loaduser
+2018-07-18 10:50:39 INFO  UserDAOImpl:38 - admin
+2018-07-18 10:50:39 INFO  UserDAOImpl:45 - result from db
+2018-07-18 10:50:39 INFO  UserDAOImpl:46 - com.scm.services.dao.entity.User@7fb4b105
+2018-07-18 10:50:41 DEBUG FeeController:38 - vo null
