@@ -61,6 +61,10 @@ public class StudentController {
 	public ResponseEntity getStudents(@RequestBody StudentRequestVO studentRequestVO) {
 		return new ResponseEntity(studentService.getStudents(studentRequestVO),HttpStatus.OK);
 	}
+	@RequestMapping(value="/getallstudents", method = RequestMethod.GET)
+	public ResponseEntity getAllStudents() {
+		return new ResponseEntity(studentService.getStudents(),HttpStatus.OK);
+	}
 	
 	@RequestMapping(value="/exportStudents",produces="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet")
 	public void exportStudents(@RequestBody StudentRequestVO studentRequestVO, HttpServletResponse response) {

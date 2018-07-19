@@ -22,6 +22,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.web.filter.OncePerRequestFilter;
+import org.springframework.web.util.UrlPathHelper;
+
 import com.scm.services.common.Constants;
 import com.scm.services.common.JwtTokenUtil;
 
@@ -40,7 +42,9 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
         String header = req.getHeader(Constants.HEADER_STRING);
         HttpServletResponse response = (HttpServletResponse) res;
     	HttpServletRequest request = (HttpServletRequest) req;
-
+logger.warn(request.getRequestURI());
+   String resourcePath=new UrlPathHelper().getPathWithinApplication(request);
+   logger.warn(resourcePath);
     	response.setHeader("Access-Control-Allow-Origin", "http://localhost:4200");
     	response.setHeader("Access-Control-Allow-Methods", "POST,PUT, GET, OPTIONS, DELETE");
 

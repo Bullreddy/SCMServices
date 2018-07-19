@@ -73,6 +73,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
          //   .anyRequest().authenticated();*/
             
     	http.authorizeRequests().antMatchers("/token/**").permitAll()
+    	
     	.anyRequest().authenticated();
         http.csrf().disable();
         http.exceptionHandling().authenticationEntryPoint(unauthorizedHandler);
@@ -99,7 +100,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 HttpMethod.POST,
                 Constants.AuthenicationPath
             )
-
+            .antMatchers(
+                    HttpMethod.GET,
+                    Constants.Students
+                )
             // allow anonymous resource requests
             .and()
             .ignoring()
