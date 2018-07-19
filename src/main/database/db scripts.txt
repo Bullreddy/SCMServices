@@ -162,3 +162,45 @@ BEGIN
      years
      END;
    END;
+   
+  CREATE TABLE `scm`.`fee_details` (
+  `id` INT NOT NULL,
+  `student_id` INT NOT NULL,
+  `amount` DECIMAL(9,2) NOT NULL,
+  `year_id` INT(10) NULL,
+  `collected_by` INT NULL,
+  `created_by` VARCHAR(45) NULL,
+  `created_date` DATETIME NULL,
+  PRIMARY KEY (`id`),
+  INDEX `student_id_fk1_idx` (`student_id` ASC),
+  INDEX `collected_by_fk2_idx` (`collected_by` ASC),
+  INDEX `fee_detail_fk3_idx` (`year_id` ASC),
+  CONSTRAINT `student_id_fk1`
+    FOREIGN KEY (`student_id`)
+    REFERENCES `scm`.`admission` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `collected_by_fk2`
+    FOREIGN KEY (`collected_by`)
+    REFERENCES `scm`.`user` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+    CONSTRAINT `fee_detail_fk3`
+    FOREIGN KEY (`year_id`)
+    REFERENCES `scm`.`classification` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+	);
+	
+	
+	
+	use scm;
+ALTER TABLE classification MODIFY COLUMN type ENUM('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE','SCHOLARSHIP','BRANCH','FEE_YEAR');
+
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('15','YEAR1','YEAR1','FEE_YEAR','2018-05-09 22:57:33','2018-05-09 22:57:36','13');
+insert into `classification` (`id`, `code`, `name`, `type`, `date_created`, `date_modified`) values('16','YEAR2','YEAR2','FEE_YEAR','2018-05-09 23:01:04','2018-05-09 23:01:09','13');
+	
+INSERT INTO `scm`.`fee_details` (`id`, `student_id`, `amount`, `year_id`, `collected_by`, `created_by`, `created_date`) VALUES ('2', '1', '10000.00', '13', '1', '1', '2018-03-31 11:00:53');
+	
+INSERT INTO `scm`.`fee_details` (`id`, `student_id`, `amount`, `year_id`, `collected_by`, `created_by`, `created_date`) VALUES ('1', '1', '10000.00', '13', '1', '1', '2018-03-31 11:00:53');
+  

@@ -15,7 +15,10 @@
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
+<<<<<<< HEAD
 			<attribute name="test" value="true"/>
+=======
+>>>>>>> 08492bbda2289d79c4d7debcb9fb18abacfca7bf
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
@@ -29,5 +32,9 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
+<<<<<<< HEAD
+=======
+	<classpathentry combineaccessrules="false" kind="src" path="/SCMVO"/>
+>>>>>>> 08492bbda2289d79c4d7debcb9fb18abacfca7bf
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
