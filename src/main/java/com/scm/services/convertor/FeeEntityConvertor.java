@@ -27,10 +27,10 @@ public class FeeEntityConvertor {
 	public FeeDetailVO convertToVO(FeeDetail entity) throws ServiceException{
 		FeeDetailVO vo = new FeeDetailVO();
 		vo.setAmount(entity.getAmount());
-		vo.setCollectedBy(entity.getCollectedBy().getUsername());
+		vo.setCollectedBy(String.valueOf(entity.getCollectedBy()));
 		vo.setCollectedDate(DateUtil.convertToLocalDateTimeViaInstant(entity.getCreatedDate()));
-		vo.setStudentId(String.valueOf(entity.getStudentId().getId()));
-		vo.setStudentName(entity.getStudentId().getName());
+		vo.setStudentId(String.valueOf(entity.getStudentId()));
+		//vo.setStudentName(entity.getStudentId().getName());
 		return vo;
 	}
 }

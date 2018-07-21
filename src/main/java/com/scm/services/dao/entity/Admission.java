@@ -119,7 +119,7 @@ public class Admission implements Serializable {
 	@OneToMany(mappedBy="studentid")
 	List<StudentCertificate> studentCertificates;
 	
-	@OneToMany(mappedBy="studentId",fetch=FetchType.LAZY)
+	@OneToMany(mappedBy="studentId")
 	List<FeeDetail> feeDetails;
 	
 	

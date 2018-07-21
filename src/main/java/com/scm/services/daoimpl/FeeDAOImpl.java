@@ -73,7 +73,7 @@ public class FeeDAOImpl extends BaseDAOImpl implements FeeDAO {
 		LOGGER.info(admissions);
 		if(null == admissions)
 			return null;
-		return convertor.convertAdmissionListTOStudentVOList(admissions);
+		return convertor.convertAdmissionListTOStudentVOList(admissions,true);
 	}
 
 }

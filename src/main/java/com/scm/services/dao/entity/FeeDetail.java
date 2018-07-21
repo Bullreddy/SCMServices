@@ -1,7 +1,8 @@
 package com.scm.services.dao.entity;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.Date;
+import java.sql.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -19,31 +20,45 @@ import javax.persistence.Table;
 @NamedQueries({
 @NamedQuery(name="FeeDetails.findByParams", query="SELECT a FROM FeeDetail a WHERE a.studentId= :studentId and a.yearId = :yearId")
 })
-public class FeeDetail {
+public class FeeDetail implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-/*
-	@OneToOne
-	@JoinColumn(name = "id")*/
+
+	//@OneToOne
+	@Column(name = "student_id")
 	private int studentId;
 
 	@Column(name = "amount")
 	private BigDecimal amount;
+	
 
 	@OneToOne
-	@JoinColumn(name="id",insertable=false,updatable=false)
+	@JoinColumn(name="student_id",insertable=false,updatable=false)
+	Admission student;
+
+	@OneToOne
+	@JoinColumn(name="year_id",insertable=false,updatable=false)
 	private Classification yearId;
 
 	@Column(name = "collected_by")
-	private User collectedBy;
+	private int collectedBy;
+	
+	@OneToOne
+	@JoinColumn(name="collected_by",insertable=false,updatable=false)
+	private User collectedByUser;
 
 	@Column(name = "created_date")
 	private Date createdDate;
 
 	@Column(name = "created_by")
-	private User createdBy;
+	private int createdBy;
+	
+	@OneToOne
+	@JoinColumn(name="created_by",insertable=false,updatable=false)
+	private User createdByUser;
+
 
 	public long getId() {
 		return id;
@@ -77,11 +92,11 @@ public class FeeDetail {
 		this.yearId = yearId;
 	}
 
-	public User getCollectedBy() {
+	public int getCollectedBy() {
 		return collectedBy;
 	}
 
-	public void setCollectedBy(User collectedBy) {
+	public void setCollectedBy(int collectedBy) {
 		this.collectedBy = collectedBy;
 	}
 
@@ -93,12 +108,20 @@ public class FeeDetail {
 		this.createdDate = createdDate;
 	}
 
-	public User getCreatedBy() {
+	public int getCreatedBy() {
 		return createdBy;
 	}
 
-	public void setCreatedBy(User createdBy) {
+	public void setCreatedBy(int createdBy) {
 		this.createdBy = createdBy;
+	}
+
+	public Admission getStudent() {
+		return student;
+	}
+
+	public void setStudent(Admission student) {
+		this.student = student;
 	}
 
 }

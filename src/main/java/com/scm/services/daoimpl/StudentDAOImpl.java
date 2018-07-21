@@ -47,7 +47,7 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		
 		try {
 			Admission admission =  (Admission) query.getSingleResult();
-			return convertor.convertAdmissionTOStudentVO(admission);
+			return convertor.convertAdmissionTOStudentVO(admission,false);
 			
 		}catch(NoResultException err) {
 			 
@@ -77,7 +77,7 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		
 		saveCertificates(admission,studentVO);
 
-		studentVO = convertor.convertAdmissionTOStudentVO(admission);
+		studentVO = convertor.convertAdmissionTOStudentVO(admission,false);
 		return studentVO;
 	}
 	@Override
@@ -105,7 +105,7 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 		LOGGER.info(admissions);
 		if(null == admissions)
 			return null;
-		return convertor.convertAdmissionListTOStudentVOList(admissions);
+		return convertor.convertAdmissionListTOStudentVOList(admissions,false);
 	}
 	
 	private void addStudentFilter(StringBuilder sb, StudentRequestVO studentRequestVO) {
