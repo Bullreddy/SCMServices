@@ -39,15 +39,6 @@ public class EntityConvertor {
 			});
 		}
 		
-		if(admission.getFeeDetails() !=null && admission.getFeeDetails().size() > 0) {
-			List<FeeDetailVO> feedetailsVO = new ArrayList();
-			admission.getFeeDetails().forEach( feeDetail ->{
-				feedetailsVO.add(convertFeeToFeeDetailVO(feeDetail));
-			});
-			if(feedetailsVO != null)
-			studentVO.setFeeDetailsVO(feedetailsVO);
-		}
-		
 		studentVO.setCertificateIds(certificateIds);
 		return studentVO;
 	}
