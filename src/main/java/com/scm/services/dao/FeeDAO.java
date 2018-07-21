@@ -11,5 +11,7 @@ public interface FeeDAO {
 	
 	
 	 List<FeeDetailVO> getFeeDetails(StudentVO studentVO)throws ServiceException;
+	 
+	 List<StudentVO> getStudentFeeDetails(StudentRequestVO studentRequestVO)throws ServiceException;
 
 }

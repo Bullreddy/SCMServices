@@ -58,7 +58,7 @@ public class StudentDAOImpl extends BaseDAOImpl implements StudentDAO {
 	public StudentVO saveStudent(StudentVO studentVO) {
 		LOGGER.info("save student...........");
 		Admission admission = mapper.map(studentVO, Admission.class);
-		admission.setPhotoSbmtd(studentVO.isphotoSubmitted()?"Y":"N");
+		admission.setPhotoSbmtd(studentVO.isPhotoSubmitted()?"Y":"N");
 		admission.setAcademicYearID(studentVO.getAcademicYearID());
 		admission.setCaste(studentVO.getCasteID());
 		admission.setPhaseID(studentVO.getPhaseID());

@@ -119,6 +119,9 @@ public class Admission implements Serializable {
 	@OneToMany(mappedBy="studentid")
 	List<StudentCertificate> studentCertificates;
 	
+	@OneToMany(mappedBy="studentId",fetch=FetchType.LAZY)
+	List<FeeDetail> feeDetails;
+	
 	
 
 	public Admission() {
@@ -387,7 +390,13 @@ public class Admission implements Serializable {
 	public void setStudentCertificates(List<StudentCertificate> studentCertificates) {
 		this.studentCertificates = studentCertificates;
 	}
-	
-	
 
+	public List<FeeDetail> getFeeDetails() {
+		return feeDetails;
+	}
+
+	public void setFeeDetails(List<FeeDetail> feeDetails) {
+		this.feeDetails = feeDetails;
+	}
+	
 }

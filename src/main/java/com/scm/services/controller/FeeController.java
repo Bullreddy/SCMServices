@@ -19,6 +19,7 @@ import com.bulls.scm.common.vo.FeeDetailVO;
 import com.bulls.scm.common.vo.ServiceErrorVO;
 import com.bulls.scm.common.vo.StudentVO;
 import com.bulls.scm.fee.vo.GetFeeDetailsResponseVO;
+import com.bulls.scm.vo.StudentRequestVO;
 import com.scm.services.common.ServiceErrorCodes;
 import com.scm.services.exception.ServiceException;
 import com.scm.services.serviceinf.FeeService;
@@ -34,7 +35,7 @@ public class FeeController {
 	private FeeService feeService;
 	
 	@RequestMapping(value="/getFeeDetails", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-	public ResponseEntity<GetFeeDetailsResponseVO> saveStudent(@RequestBody StudentVO studentVO,BindingResult bindingResults) {
+	public ResponseEntity<GetFeeDetailsResponseVO> getFeeDetails(@RequestBody StudentVO studentVO,BindingResult bindingResults) {
 		LOGGER.debug("vo "+studentVO.getCertificateIds());
 		GetFeeDetailsResponseVO response = new GetFeeDetailsResponseVO();
 		List<FeeDetailVO> feeDetails = new ArrayList<>();
@@ -48,6 +49,31 @@ public class FeeController {
 			 return new ResponseEntity<GetFeeDetailsResponseVO>(response,HttpStatus.NOT_FOUND);
 		 }
 		 response.setFeeDetails(feeDetails);
+		}catch(ServiceException e) {
+			ServiceErrorVO errorVO = new ServiceErrorVO();
+			errorVO.setErrorMessage(e.getMessage());
+			errorVO.setErrorCode(String.valueOf(ServiceErrorCodes.FEE_DETAILS_FAILED.getCode()));
+			response.setErrorVO(errorVO);
+			return new ResponseEntity<GetFeeDetailsResponseVO>(response,HttpStatus.INTERNAL_SERVER_ERROR);
+			
+		}
+		return new ResponseEntity<GetFeeDetailsResponseVO>(response, HttpStatus.OK);
+	}
+
+	@RequestMapping(value="/getStudentFeeDetails", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<GetFeeDetailsResponseVO> getStudentFeeDetails(@RequestBody StudentRequestVO studentRequestVO,BindingResult bindingResults) {
+		GetFeeDetailsResponseVO response = new GetFeeDetailsResponseVO();
+		List<StudentVO> feeDetails = new ArrayList<>();
+		try {
+		 feeDetails = feeService.getStudentFeeDetails(studentRequestVO);
+		 if(CollectionUtils.isEmpty(feeDetails)) {
+			 ServiceErrorVO errorVO = new ServiceErrorVO();
+			 errorVO.setErrorMessage(ServiceErrorCodes.RECORD_NOT_FOUND.getMessage());
+			 errorVO.setErrorCode(String.valueOf(ServiceErrorCodes.FEE_DETAILS_FAILED.getCode()));
+			 response.setErrorVO(errorVO);
+			 return new ResponseEntity<GetFeeDetailsResponseVO>(response,HttpStatus.NOT_FOUND);
+		 }
+		 response.setStudentDetails(feeDetails);
 		}catch(ServiceException e) {
 			ServiceErrorVO errorVO = new ServiceErrorVO();
 			errorVO.setErrorMessage(e.getMessage());

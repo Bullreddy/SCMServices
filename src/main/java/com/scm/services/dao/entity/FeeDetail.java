@@ -24,10 +24,10 @@ public class FeeDetail {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
-
+/*
 	@OneToOne
-	@JoinColumn(name = "id")
-	private Admission studentId;
+	@JoinColumn(name = "id")*/
+	private int studentId;
 
 	@Column(name = "amount")
 	private BigDecimal amount;
@@ -53,11 +53,11 @@ public class FeeDetail {
 		this.id = id;
 	}
 
-	public Admission getStudentId() {
+	public int getStudentId() {
 		return studentId;
 	}
 
-	public void setStudentId(Admission studentId) {
+	public void setStudentId(int studentId) {
 		this.studentId = studentId;
 	}
 

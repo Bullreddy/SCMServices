@@ -6,9 +6,14 @@ import java.util.List;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
+import com.bulls.scm.common.vo.FeeDetailVO;
 import com.bulls.scm.common.vo.StudentVO;
+import com.scm.services.common.DateUtil;
 import com.scm.services.common.MapperUtils;
 import com.scm.services.dao.entity.Admission;
+import com.scm.services.dao.entity.FeeDetail;
+import com.scm.services.exception.ServiceException;
 
 @Component
 public class EntityConvertor {
@@ -33,8 +38,28 @@ public class EntityConvertor {
 				certificateIds.add(String.valueOf(studentCertificate.getCertificateid()));
 			});
 		}
+		
+		if(admission.getFeeDetails() !=null && admission.getFeeDetails().size() > 0) {
+			List<FeeDetailVO> feedetailsVO = new ArrayList();
+			admission.getFeeDetails().forEach( feeDetail ->{
+				feedetailsVO.add(convertFeeToFeeDetailVO(feeDetail));
+			});
+			if(feedetailsVO != null)
+			studentVO.setFeeDetailsVO(feedetailsVO);
+		}
+		
 		studentVO.setCertificateIds(certificateIds);
 		return studentVO;
+	}
+	
+	public FeeDetailVO convertFeeToFeeDetailVO(FeeDetail entity) throws ServiceException{
+		FeeDetailVO vo = new FeeDetailVO();
+		vo.setAmount(entity.getAmount());
+		vo.setCollectedBy(entity.getCollectedBy().getUsername());
+		vo.setCollectedDate(DateUtil.convertToLocalDateTimeViaInstant(entity.getCreatedDate()));
+		vo.setStudentId(String.valueOf(entity.getStudentId()));
+		//vo.setStudentName(entity.getStudentId().getName());
+		return vo;
 	}
 
 	public List<StudentVO> convertAdmissionListTOStudentVOList(List<Admission> admissions) {

@@ -12,6 +12,8 @@ public interface FeeService {
 	
 	List<FeeDetailVO> getFeeDetails(StudentVO studentVO)throws ServiceException;
 	
+	List<StudentVO> getStudentFeeDetails(StudentRequestVO studentRequestVO)throws ServiceException;
+	
 	
 	
 	

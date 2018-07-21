@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.bulls.scm.common.vo.FeeDetailVO;
 import com.bulls.scm.common.vo.StudentVO;
+import com.bulls.scm.vo.StudentRequestVO;
 import com.scm.services.dao.FeeDAO;
 import com.scm.services.exception.ServiceException;
 import com.scm.services.serviceinf.FeeService;
@@ -19,7 +20,11 @@ public class FeeServiceImpl implements FeeService {
 	
 	@Override
 	public List<FeeDetailVO> getFeeDetails(StudentVO studentVO) throws ServiceException {
-		// TODO Auto-generated method stub
 		return feeDAO.getFeeDetails(studentVO);
+	}
+
+	@Override
+	public List<StudentVO> getStudentFeeDetails(StudentRequestVO studentRequestVO) throws ServiceException {
+		return feeDAO.getStudentFeeDetails(studentRequestVO);
 	}
 }
