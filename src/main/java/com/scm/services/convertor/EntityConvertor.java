@@ -23,7 +23,7 @@ public class EntityConvertor {
 	@Autowired
 	public MapperUtils mapper;
 	  
-	public StudentVO convertAdmissionTOStudentVO(Admission admission) {
+	public StudentVO convertAdmissionTOStudentVO(Admission admission, boolean feeDetails) {
 		StudentVO studentVO = mapper.map(admission, StudentVO.class);
 		studentVO.setPhotoSubmitted(admission.getPhotoSbmtd()!=null && admission.getPhotoSbmtd().equals("Y"));
 		studentVO.setAcademicYearID(admission.getAcademicYearID());
@@ -39,6 +39,19 @@ public class EntityConvertor {
 			});
 		}
 		
+		if(feeDetails) {
+			LOGGER.info(admission.getFeeDetails());
+			if(admission.getFeeDetails() != null && admission.getFeeDetails().size()>0) {
+				List<FeeDetailVO> feeDetailsVO = new ArrayList();
+				admission.getFeeDetails().forEach(feeDetail ->{
+					feeDetailsVO.add(convertFeeToFeeDetailVO(feeDetail));
+				});
+				if(feeDetailsVO != null && feeDetailsVO.size() > 0)
+					studentVO.setFeeDetailsVO(feeDetailsVO);
+			}
+			
+		}
+		
 		studentVO.setCertificateIds(certificateIds);
 		return studentVO;
 	}
@@ -46,18 +59,20 @@ public class EntityConvertor {
 	public FeeDetailVO convertFeeToFeeDetailVO(FeeDetail entity) throws ServiceException{
 		FeeDetailVO vo = new FeeDetailVO();
 		vo.setAmount(entity.getAmount());
-		vo.setCollectedBy(entity.getCollectedBy().getUsername());
-		vo.setCollectedDate(DateUtil.convertToLocalDateTimeViaInstant(entity.getCreatedDate()));
+		vo.setCollectedBy(entity.getCollectedByUser().getUsername());
+		//if(entity.getCreatedDate() != null)
+		//vo.setCollectedDate(entity.getCreatedDate() != null ? DateUtil.convertToLocalDateTimeViaInstant(entity.getCreatedDate()) : null);
+		vo.setCollectedDate(entity.getCollectedDate());
 		vo.setStudentId(String.valueOf(entity.getStudentId()));
-		//vo.setStudentName(entity.getStudentId().getName());
+		vo.setStudentName(entity.getStudent().getName());
 		return vo;
 	}
 
-	public List<StudentVO> convertAdmissionListTOStudentVOList(List<Admission> admissions) {
+	public List<StudentVO> convertAdmissionListTOStudentVOList(List<Admission> admissions, boolean feeDetails) {
 		List<StudentVO> studentVOList = new ArrayList<StudentVO>();
 		LOGGER.info("mapper "+mapper);
 		for(Admission admission:admissions) {
-			studentVOList.add(convertAdmissionTOStudentVO(admission));
+			studentVOList.add(convertAdmissionTOStudentVO(admission,feeDetails));
 		}
 		return studentVOList;
 	}

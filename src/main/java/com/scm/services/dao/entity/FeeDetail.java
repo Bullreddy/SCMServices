@@ -2,7 +2,7 @@ package com.scm.services.dao.entity;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.sql.Date;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -14,6 +14,8 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 @Table(name = "fee_Details")
@@ -50,7 +52,12 @@ public class FeeDetail implements Serializable{
 	private User collectedByUser;
 
 	@Column(name = "created_date")
+	@Temporal(TemporalType.DATE)
 	private Date createdDate;
+	
+	@Column(name = "collected_date")
+	@Temporal(TemporalType.DATE)
+	private Date collectedDate;
 
 	@Column(name = "created_by")
 	private int createdBy;
@@ -122,6 +129,30 @@ public class FeeDetail implements Serializable{
 
 	public void setStudent(Admission student) {
 		this.student = student;
+	}
+
+	public User getCollectedByUser() {
+		return collectedByUser;
+	}
+
+	public void setCollectedByUser(User collectedByUser) {
+		this.collectedByUser = collectedByUser;
+	}
+
+	public User getCreatedByUser() {
+		return createdByUser;
+	}
+
+	public void setCreatedByUser(User createdByUser) {
+		this.createdByUser = createdByUser;
+	}
+
+	public Date getCollectedDate() {
+		return collectedDate;
+	}
+
+	public void setCollectedDate(Date collectedDate) {
+		this.collectedDate = collectedDate;
 	}
 
 }
