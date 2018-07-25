@@ -1,0 +1,134 @@
+
+
+CREATE DATABASE IF NOT EXISTS scm;
+
+USE scm;
+
+DROP TABLE IF EXISTS `admission`;
+
+CREATE TABLE `admission` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `admission_no` varchar(50) DEFAULT NULL,
+  `registration_no` varchar(50) DEFAULT NULL,
+  `academic_year` int(11) DEFAULT NULL,
+  `phase` int(11) DEFAULT NULL,
+  `name` varchar(200) DEFAULT NULL,
+  `father_name` varchar(200) DEFAULT NULL,
+  `mother_name` varchar(200) DEFAULT NULL,
+  `present_address` varchar(350) DEFAULT NULL,
+  `mobile_no` decimal(10,0) DEFAULT NULL,
+  `alternate_mobile_no` decimal(10,0) DEFAULT NULL,
+  `email` varchar(100) DEFAULT NULL,
+  `trade` int(11) DEFAULT NULL,
+  `caste` int(11) DEFAULT NULL,
+  `dob` date DEFAULT NULL,
+  `scholarship` int(11) DEFAULT NULL,
+  `photo_sbmtd` char(1) DEFAULT NULL,
+  `admission_date` date DEFAULT NULL,
+  `gender` char(1) DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  `shift` varchar(10) DEFAULT NULL,
+  `unit` varchar(10) DEFAULT NULL,
+  `UID_Number` varchar(25) DEFAULT NULL,
+  `highest_qualification` varchar(50) DEFAULT NULL,
+  `dual_mode` char(1) DEFAULT NULL,
+  `identification_marks` varchar(350) DEFAULT NULL,
+  `category` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `academic_year` (`academic_year`),
+  KEY `phase` (`phase`),
+  KEY `trade` (`trade`),
+  KEY `caste` (`caste`),
+  KEY `type` (`type`),
+  KEY `scholarship` (`scholarship`),
+  CONSTRAINT `admission_ibfk_1` FOREIGN KEY (`academic_year`) REFERENCES `classification` (`id`),
+  CONSTRAINT `admission_ibfk_2` FOREIGN KEY (`phase`) REFERENCES `classification` (`id`),
+  CONSTRAINT `admission_ibfk_3` FOREIGN KEY (`trade`) REFERENCES `classification` (`id`),
+  CONSTRAINT `admission_ibfk_4` FOREIGN KEY (`caste`) REFERENCES `classification` (`id`),
+  CONSTRAINT `admission_ibfk_5` FOREIGN KEY (`type`) REFERENCES `classification` (`id`),
+  CONSTRAINT `admission_ibfk_6` FOREIGN KEY (`scholarship`) REFERENCES `classification` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `certificates`;
+
+CREATE TABLE `certificates` (
+  `id` int(11) NOT NULL DEFAULT '0',
+  `code` varchar(100) DEFAULT NULL,
+  `name` varchar(200) DEFAULT NULL,
+  `type` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `type` (`type`),
+  CONSTRAINT `certificates_ibfk_1` FOREIGN KEY (`type`) REFERENCES `classification` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `classification`;
+
+CREATE TABLE `classification` (
+  `id` int(10) NOT NULL,
+  `code` varchar(50) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `type` enum('CASTE','TRADE','PHASE','ACADEMIC_YEAR','CERTIFICATE','TYPE','SCHOLARSHIP','BRANCH','FEE_YEAR') DEFAULT NULL,
+  `date_created` datetime DEFAULT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  `branchid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `datasourceconfig`;
+
+CREATE TABLE `datasourceconfig` (
+  `id` int(10) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) DEFAULT NULL,
+  `url` varchar(100) NOT NULL,
+  `driverclassname` varchar(100) NOT NULL,
+  `initialize` tinyint(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DROP TABLE IF EXISTS `fee_details`;
+
+CREATE TABLE `fee_details` (
+  `id` int(11) NOT NULL,
+  `student_id` int(11) NOT NULL,
+  `amount` decimal(9,2) NOT NULL,
+  `year_id` int(10) DEFAULT NULL,
+  `collected_by` int(11) DEFAULT NULL,
+  `created_by` varchar(45) DEFAULT NULL,
+  `created_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  KEY `student_id_fk1_idx` (`student_id`),
+  KEY `collected_by_fk2_idx` (`collected_by`),
+  KEY `fee_detail_fk3_idx` (`year_id`),
+  CONSTRAINT `collected_by_fk2` FOREIGN KEY (`collected_by`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fee_detail_fk3` FOREIGN KEY (`year_id`) REFERENCES `classification` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `student_id_fk1` FOREIGN KEY (`student_id`) REFERENCES `admission` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `student_certificates`;
+
+CREATE TABLE `student_certificates` (
+  `id` int(11) NOT NULL,
+  `studentid` int(11) DEFAULT NULL,
+  `certificateid` int(11) DEFAULT NULL,
+  KEY `studentid` (`studentid`),
+  KEY `certificateid` (`certificateid`),
+  CONSTRAINT `student_certificates_ibfk_1` FOREIGN KEY (`studentid`) REFERENCES `admission` (`id`) ON DELETE SET NULL ON UPDATE CASCADE,
+  CONSTRAINT `student_certificates_ibfk_2` FOREIGN KEY (`certificateid`) REFERENCES `certificates` (`id`) ON DELETE SET NULL ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+DROP TABLE IF EXISTS `user`;
+
+CREATE TABLE `user` (
+  `id` int(10) NOT NULL,
+  `username` varchar(100) NOT NULL,
+  `password` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `contact_no` decimal(10,0) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
